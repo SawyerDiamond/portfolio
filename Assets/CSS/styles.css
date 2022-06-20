@@ -108,11 +108,21 @@ img {
   border-radius: 3.25vmin;
   border-style: solid;
   border-width: 0.4vmin;
-  border-color: #0971f0;
+  border-color: #0c1a37;
+  box-shadow: var(--navy-shadow);
 }
 #hero-text {
   max-width: 45%;
   height: auto;
+  box-shadow: var(--navy-shadow);
+}
+#hero-social_list {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(47%) saturate(1505%)
+    hue-rotate(178deg) brightness(99%) contrast(111%);
+  padding: 10px;
+}
+.hero-social_links {
+  width: 250px;
 }
 #waves {
   position: absolute;
