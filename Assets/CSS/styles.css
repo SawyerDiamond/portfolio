@@ -84,16 +84,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-header {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding-top: 18%;
-  padding-right: 3%;
-  padding-left: 3%;
-}
 /*--<REUSEABLE CLASSES>--*/
 
 .grid {
@@ -102,11 +92,15 @@ header {
 }
 
 /*--<HERO>--*/
-#background {
-  max-width: 100%;
+#hero-section_container {
+  width: 100%;
   height: auto;
   display: flex;
+  justify-content: space-around;
   align-items: center;
+  padding-top: 18%;
+  padding-right: 3%;
+  padding-left: 3%;
 }
 #hero-logo {
   max-width: 15%;
