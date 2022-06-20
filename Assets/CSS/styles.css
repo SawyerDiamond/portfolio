@@ -1,0 +1,130 @@
+/*--<FONTS>--*/
+/* Gilroy Regular */
+@font-face {
+  font-family: "Gilroy";
+  src: url(fonts/Gilroy-Regular.woff);
+  src: url(fonts/Gilroy-Regular.ttf);
+  font-weight: 500;
+  font-style: normal;
+} /* Gilroy Medium */
+@font-face {
+  font-family: "Gilroy";
+  src: url(fonts/Gilroy-Medium.woff);
+  src: url(fonts/Gilroy-Medium.ttf);
+  font-weight: 600;
+  font-style: normal;
+}
+/* Gilroy Semi Bold */
+@font-face {
+  font-family: "Gilroy";
+  src: url(fonts/Gilroy-SemiBold.woff);
+  src: url(fonts/Gilroy-SemiBold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+/* Gilroy Bold */
+@font-face {
+  font-family: "Gilroy";
+  src: url(fonts/Gilroy-Bold.ttf);
+  src: url(fonts/Gilroy-Bold.woff);
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url(fonts/Jeko-Extra-Bold.ttf);
+  font-weight: 900;
+  font-style: normal;
+}
+/*--<CSS VARIABLES>--*/
+:root {
+  /*--<COLORS>--*/
+  --navy-primary: #0b162c;
+  --navy-secondary: #0f234d;
+  --dark-blue: #0971f0;
+  --light-blue: #138ef0;
+  --dark-gold: #f7991d;
+  --light-gold: #fcc00a;
+  --white-primary: #f8fbff;
+  --white-secondary: #d9d9d9;
+  /*--<GRADIENTS>--*/
+  --blue-gradient: var(--light-blue), var(--dark-blue);
+  --gold-gradient: var(--light-gold), var(--dark-gold);
+
+  /*--<FONTS>--*/
+
+  /*--<SHADOW>--*/
+  --blue-shadow: 0 0 0 30px #105fd666;
+  --navy-shadow: 0px 0px 30px #0b162cb3;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Gilroy", "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: var(--navy-primary);
+  color: var(--white-primary);
+}
+h1,
+h2,
+h3 {
+  font-weight: 900;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 18%;
+  padding-right: 3%;
+  padding-left: 3%;
+}
+/*--<REUSEABLE CLASSES>--*/
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/*--<HERO>--*/
+#background {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+#hero-logo {
+  max-width: 15%;
+  height: auto;
+  border-radius: 3.25vmin;
+  border-style: solid;
+  border-width: 0.4vmin;
+  border-color: #0971f0;
+}
+#hero-text {
+  max-width: 45%;
+  height: auto;
+}
+#waves {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  max-width: 100%;
+  height: auto;
+  z-index: -1;
+}
