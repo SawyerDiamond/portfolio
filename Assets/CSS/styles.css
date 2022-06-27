@@ -56,6 +56,19 @@
   /*--<SHADOW>--*/
   --blue-shadow: 0 0 0 30px #105fd666;
   --navy-shadow: 0px 0px 30px #0b162cb3;
+  --white-shadow: 0px 0px 15px #f8fbff44;
+}
+body::-webkit-scrollbar {
+  width: 0px;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--navy-secondary);
+  border-radius: 10px;
 }
 
 * {
@@ -63,6 +76,8 @@
   padding: 0;
   margin: 0;
   font-family: "Gilroy", "Segoe UI", sans-serif;
+  scrollbar-width: 10px;
+  scrollbar-color: var(--navy-secondary);
 }
 
 body {
@@ -103,26 +118,40 @@ img {
   padding-left: 3%;
 }
 #hero-logo {
-  max-width: 15%;
+  max-width: 18%;
   height: auto;
-  border-radius: 3.25vmin;
+  border-radius: 25%;
   border-style: solid;
   border-width: 0.4vmin;
-  border-color: #0c1a37;
-  box-shadow: var(--navy-shadow);
+  border-color: var(--white-primary);
+  box-shadow: var(--white-shadow);
 }
 #hero-text {
   max-width: 45%;
   height: auto;
-  box-shadow: var(--navy-shadow);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }
 #hero-social_list {
-  filter: brightness(0) saturate(100%) invert(100%) sepia(47%) saturate(1505%)
-    hue-rotate(178deg) brightness(99%) contrast(111%);
-  padding: 10px;
 }
+
 .hero-social_links {
-  width: 250px;
+  width: 1.8em;
+  height: 1.8em;
+  display: grid;
+  place-items: center;
+  transform: scale(1.6);
+  margin: 50px;
+  stroke-width: "1";
+  color: #f8fbff;
+  box-shadow: var(--navy-shadow);
+  background-color: var(--navy-secondary);
+  border-radius: 25%;
 }
 #waves {
   position: absolute;
