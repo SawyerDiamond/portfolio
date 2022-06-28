@@ -103,6 +103,7 @@ img {
 }
 
 /*--<HERO>--*/
+
 #hero-section_container {
   width: 100%;
   height: auto;
@@ -166,3 +167,4 @@ img {
   box-shadow: var(--blue-shadow);
   transition: all 600ms ease;
 }
+/*--<PROJECTS>--*/
