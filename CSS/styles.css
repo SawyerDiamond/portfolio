@@ -129,6 +129,7 @@ img {
   border-width: 0.4vmin;
   border-color: var(--white-primary);
   box-shadow: var(--white-shadow);
+  z-index: 1;
 }
 #hero-text {
   max-width: 45%;
@@ -140,6 +141,7 @@ img {
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
+  z-index: 1;
 }
 #waves {
   position: absolute;
