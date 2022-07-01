@@ -104,7 +104,7 @@ img {
 
 /*--<HERO>--*/
 
-#hero-section_container {
+.hero-section_container {
   width: 100%;
   height: auto;
   display: flex;
@@ -115,13 +115,13 @@ img {
   padding-left: 10%;
   padding-right: 5%;
 }
-#hero-section_right {
+.hero-section_right {
   display: flex;
   flex-direction: row;
   justify-content: end;
   align-items: center;
 }
-#hero-logo {
+.hero-logo {
   max-width: 32%;
   height: 32%;
   border-radius: 25%;
@@ -131,7 +131,7 @@ img {
   box-shadow: var(--white-shadow);
   z-index: 1;
 }
-#hero-text {
+.hero-text {
   max-width: 45%;
   height: auto;
   -webkit-touch-callout: none;
@@ -143,7 +143,7 @@ img {
   user-select: none;
   z-index: 1;
 }
-#waves {
+.waves {
   position: absolute;
   top: 0px;
   left: 0px;
