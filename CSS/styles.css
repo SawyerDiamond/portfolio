@@ -179,3 +179,12 @@ img {
 }
 
 /*--<PROJECTS>--*/
+.skills-item {
+  color: white;
+  display: flex;
+  width: 150px;
+  height: auto;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 10px;
+}
