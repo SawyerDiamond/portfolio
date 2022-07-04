@@ -52,7 +52,11 @@
   --blue-gradient: var(--light-blue), var(--dark-blue);
   --gold-gradient: var(--light-gold), var(--dark-gold);
   /*--<FONTS>--*/
-  /*--<SHADOW>--*/
+  /* FONTS */
+  /*
+    Gilroy
+
+  */
   --blue-shadow: 0px 0px 10px rgba(16, 95, 214, 0.4);
   --navy-shadow: 0px 0px 30px #0b162cb3;
   --white-shadow: 0px 0px 15px #f8fbff44;
@@ -93,6 +97,10 @@ h3 {
   font-weight: 900;
 }
 
+h1 {
+  font-size: 50px;
+}
+
 ul {
   list-style: none;
 }
@@ -107,19 +115,28 @@ img {
 }
 
 /*--<HERO>--*/
-.hero-section_container {
+
+.hero {
+  position: relative;
+  display: block;
+}
+.hero-text {
   width: 100%;
   height: auto;
+}
+.hero-container {
+  position: absolute;
+  top: 0px;
+  left: 0px;
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding-top: 18%;
+  margin-top: 16vh;
   padding-left: 10%;
   padding-right: 5%;
 }
-
-.hero-section_right {
+.hero-container_right {
   display: flex;
   flex-direction: row;
   justify-content: end;
@@ -179,12 +196,25 @@ img {
 }
 
 /*--<PROJECTS>--*/
-.skills-item {
-  color: white;
-  display: flex;
-  width: 150px;
+main {
+  width: 100%;
   height: auto;
+  position: relative;
+  margin-top: auto;
+}
+
+.skills-item {
+  display: flex;
+  width: 2rem;
+  height: 2rem;
   flex-wrap: nowrap;
   align-items: center;
   padding: 10px;
+  color: white;
+}
+.skills-item li {
+  filter: invert(100%) sepia(26%) saturate(2767%) hue-rotate(179deg)
+    brightness(103%) contrast(104%);
+  align-items: center;
+  padding: 5px;
 }
