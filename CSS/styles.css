@@ -120,19 +120,17 @@ img {
   position: relative;
   display: block;
 }
-.hero-text {
-  width: 100%;
-  height: auto;
-}
+
 .hero-container {
   position: absolute;
   top: 0px;
+  right: 0px;
+  bottom: 0px;
   left: 0px;
   display: flex;
-  flex-wrap: nowrap;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 16vh;
   padding-left: 10%;
   padding-right: 5%;
 }
