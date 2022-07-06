@@ -55,7 +55,7 @@
   /* FONTS */
   /*
     Gilroy
-
+    Jeko (Header)
   */
   --blue-shadow: 0px 0px 10px rgba(16, 95, 214, 0.4);
   --navy-shadow: 0px 0px 30px #0b162cb3;
@@ -92,13 +92,25 @@ body {
 }
 
 h1,
-h2,
-h3 {
+h2 {
   font-weight: 900;
 }
 
 h1 {
   font-size: 50px;
+}
+
+h2 {
+  font-size: 46px;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+p {
+  font-weight: 700;
 }
 
 ul {
@@ -182,12 +194,13 @@ img {
   box-shadow: var(--navy-shadow);
   background-color: var(--navy-secondary);
   border-radius: 25%;
+  overflow: hidden;
 }
 
 .hero-social_list a:hover {
   background: linear-gradient(87.53deg, #0971f0 -28.38%, #138ef0 109.3%);
   box-shadow: var(--blue-shadow);
-  transition: all 600ms ease;
+  transition: all 1000ms ease;
 }
 
 /*--<PROJECTS>--*/
@@ -195,19 +208,24 @@ img {
   width: 100%;
   height: auto;
   position: relative;
-  margin-top: auto;
+}
+.skills-list {
+  display: grid;
+  grid-template-columns: 20% 20%;
+  gap: 60px 0px;
+  margin-top: 30px;
+  justify-content: center;
 }
 .skills-item {
+  width: 1.26rem;
+  height: 1.26rem;
   display: flex;
-  width: 2rem;
-  height: 2rem;
   flex-wrap: nowrap;
   align-items: center;
-  padding: 10px;
+  justify-content: center;
   color: white;
 }
-.skills-item li {
+.skills-item img {
   filter: invert(100%) sepia(26%) saturate(2767%) hue-rotate(179deg) brightness(103%) contrast(104%);
   align-items: center;
-  padding: 5px;
 }
