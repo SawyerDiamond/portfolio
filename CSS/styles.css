@@ -32,9 +32,9 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "Gilroy";
+  font-family: "Jeko";
   src: url(fonts/Jeko-Extra-Bold.ttf);
-  font-weight: 900;
+  font-weight: 800;
   font-style: normal;
 }
 /*--<CSS VARIABLES>--*/
@@ -72,7 +72,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--navy-secondary);
+  background-color: var(--white-primary);
   border-radius: 10px;
 }
 
@@ -87,26 +87,30 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {
-  background-color: var(--navy-primary);
   color: var(--white-primary);
 }
 
 h1,
-h2 {
-  font-weight: 900;
+h2,
+h3 {
+  font-family: "Gilroy", "Segoe UI", sans-serif;
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 70px;
+  font-weight: lighter;
+  font-style: normal;
 }
 
 h2 {
-  font-size: 46px;
+  font-size: 66px;
+  font-weight: lighter;
+  font-style: normal;
 }
 
 h3 {
-  font-size: 30px;
-  font-weight: 800;
+  font-size: 28px;
+  font-weight: 600;
 }
 
 p {
@@ -127,6 +131,14 @@ img {
 }
 
 /*--<HERO>--*/
+.first-section {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 10%;
+  background-color: #0b162c;
+  border-radius: 0px 0px 0px 100px;
+}
+
 .hero {
   position: relative;
   display: block;
@@ -203,29 +215,43 @@ img {
   transition: all 1000ms ease;
 }
 
-/*--<PROJECTS>--*/
-.skills {
+/*--<SKILLS SECTION>--*/
+.skills-bg-text {
+  width: 70%;
+  height: auto;
+  position: absolute;
+}
+.skills-header {
+  display: flex;
+  align-content: center;
+  margin-left: 3%;
+  margin-top: 3%;
+}
+.skills-header-img {
+  width: 3.4rem;
+  height: auto;
+}
+.skills-container {
   width: 100%;
   height: auto;
   position: relative;
 }
 .skills-list {
   display: grid;
-  grid-template-columns: 20% 20%;
+  grid-template-columns: 20% 20% 20%;
   gap: 60px 0px;
   margin-top: 30px;
-  justify-content: center;
+  place-content: center;
 }
 .skills-item {
-  width: 1.26rem;
-  height: 1.26rem;
+  width: 1.2rem;
+  height: 1.2rem;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: center;
+  z-index: 1;
   color: white;
 }
 .skills-item img {
   filter: invert(100%) sepia(26%) saturate(2767%) hue-rotate(179deg) brightness(103%) contrast(104%);
-  align-items: center;
 }
