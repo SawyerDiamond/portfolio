@@ -32,9 +32,9 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "Jeko";
+  font-family: "Gilroy";
   src: url(fonts/Jeko-Extra-Bold.ttf);
-  font-weight: 800;
+  font-weight: 900;
   font-style: normal;
 }
 
@@ -79,7 +79,6 @@ body::-webkit-scrollbar-thumb {
 
 /*--<PRESETS>--*/
 * {
-  box-sizing: border-box;
   padding: 0;
   margin: 0;
   font-family: "Gilroy", "Segoe UI", sans-serif;
@@ -91,31 +90,22 @@ body {
   color: var(--white-primary);
 }
 
-h1,
-h2,
-h3 {
-  font-family: "Gilroy", "Segoe UI", sans-serif;
-}
-
 h1 {
   font-size: 70px;
-  font-weight: lighter;
+  font-weight: 900;
   font-style: normal;
 }
 h2 {
   font-size: 66px;
-  font-weight: lighter;
+  font-weight: 800;
   font-style: normal;
 }
 h3 {
   font-size: 28px;
-  font-weight: 600;
+  font-weight: 500;
 }
 p {
-  font-weight: 700;
-}
-ul {
-  list-style: none;
+  font-weight: 500;
 }
 
 a {
@@ -191,7 +181,7 @@ img {
   z-index: -1;
 }
 
-.hero-social_list a {
+.hero-social_list li {
   width: 1.6rem;
   height: 1.6rem;
   display: grid;
@@ -205,7 +195,7 @@ img {
   overflow: hidden;
 }
 
-.hero-social_list a:hover {
+.hero-social_list li:hover {
   background: linear-gradient(87.53deg, #0971f0 -28.38%, #138ef0 109.3%);
   box-shadow: var(--blue-shadow);
   transition: all 1000ms ease;
@@ -214,18 +204,22 @@ img {
 /*--<SKILLS SECTION>--*/
 
 .skills {
+  width: 100%;
   &-bg-text {
-    width: 70%;
+    width: 40%;
     height: auto;
-
-    position: absolute;
+    z-index: 0;
+    position: inherit;
+    display: flex;
+    justify-content: center;
   }
   &-header {
     display: flex;
     align-content: center;
     margin-left: 3%;
     margin-top: 3%;
-
+    position: relative;
+    z-index: 1;
     &-img {
       width: 3.4rem;
       height: auto;
@@ -239,19 +233,22 @@ img {
   &-list {
     display: grid;
     grid-template-columns: 20% 20% 20%;
-    gap: 60px 0px;
+    gap: 90px 60px;
     margin-top: 30px;
     place-content: center;
+    position: relative;
+    z-index: 1;
   }
   &-item {
-    width: 1.2rem;
-    height: 1.2rem;
     display: flex;
-    flex-wrap: nowrap;
     align-items: center;
-    z-index: 1;
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 10px;
     color: white;
     img {
+      width: 1.2rem;
+      height: 1.2rem;
       filter: invert(100%) sepia(26%) saturate(2767%) hue-rotate(179deg)
         brightness(103%) contrast(104%);
     }
