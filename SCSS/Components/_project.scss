@@ -3,7 +3,6 @@
 @font-face {
   font-family: "Gilroy";
   src: url(fonts/Gilroy-Regular.woff);
-  src: url(fonts/Gilroy-Regular.ttf);
   font-weight: 500;
   font-style: normal;
 }
@@ -11,7 +10,6 @@
 @font-face {
   font-family: "Gilroy";
   src: url(fonts/Gilroy-Medium.woff);
-  src: url(fonts/Gilroy-Medium.ttf);
   font-weight: 600;
   font-style: normal;
 }
@@ -19,7 +17,6 @@
 @font-face {
   font-family: "Gilroy";
   src: url(fonts/Gilroy-SemiBold.woff);
-  src: url(fonts/Gilroy-SemiBold.ttf);
   font-weight: 700;
   font-style: normal;
 }
@@ -27,7 +24,6 @@
 @font-face {
   font-family: "Gilroy";
   src: url(fonts/Gilroy-Bold.ttf);
-  src: url(fonts/Gilroy-Bold.woff);
   font-weight: 800;
   font-style: normal;
 }
@@ -69,11 +65,11 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: var(--navy-primary);
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--white-primary);
+  background-color: var(--navy-secondary);
   border-radius: 10px;
 }
 
@@ -99,10 +95,6 @@ h2 {
   font-size: 66px;
   font-weight: 800;
   font-style: normal;
-}
-h3 {
-  font-size: 28px;
-  font-weight: 500;
 }
 p {
   font-weight: 500;
@@ -182,8 +174,8 @@ img {
 }
 
 .hero-social_list li {
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 1rem;
+  height: 1rem;
   display: grid;
   place-content: center;
   transform: scale(1.6);
@@ -192,7 +184,7 @@ img {
   box-shadow: var(--navy-shadow);
   background-color: var(--navy-secondary);
   border-radius: 25%;
-  overflow: hidden;
+  padding: 4px;
 }
 
 .hero-social_list li:hover {
@@ -232,7 +224,8 @@ img {
   }
   &-list {
     display: grid;
-    gap: 90px 60px;
+    grid-template-columns: 16rem 16rem;
+    gap: 90px 120px;
     margin-top: 30px;
     place-content: center;
     position: relative;
@@ -251,10 +244,6 @@ img {
       height: 1.2rem;
       padding: 5px;
       margin-top: 3px;
-    }
-    h4 {
-      margin-left: 25px;
-      margin-right: 25px;
     }
   }
 }
