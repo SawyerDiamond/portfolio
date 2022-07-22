@@ -58,7 +58,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {
-  background-color: navy;
+  background-color: $navy-primary;
   color: $white-primary;
 }
 
@@ -149,7 +149,6 @@ img {
   place-content: center;
   transform: scale(1.6);
   margin: 40px;
-  color: #f8fbff;
   box-shadow: $navy-shadow;
   background-color: $navy-secondary;
   border-radius: 25%;
@@ -173,6 +172,7 @@ img {
     display: flex;
     align-content: center;
     justify-content: center;
+    position: absolute;
   }
   &-header {
     display: flex;
@@ -189,6 +189,7 @@ img {
   &-container {
     width: 100%;
     height: auto;
+    background-image: url("Images\SKILLS(Traced1).svg");
     position: relative;
   }
   &-list {
@@ -197,7 +198,7 @@ img {
     gap: 90px 120px;
     margin-top: 30px;
     place-content: center;
-    position: relative;
+    position: absolute;
     z-index: 1;
   }
   &-item {
