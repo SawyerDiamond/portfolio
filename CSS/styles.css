@@ -173,15 +173,15 @@ img {
 /*--<SKILLS SECTION>--*/
 .skills {
   width: 100%;
-  background-image: url("Images/SKILLS(Traced1).svg");
 }
 .skills-bg-text {
-  width: 80%;
+  width: 110%;
   height: auto;
   z-index: -1;
   display: flex;
   align-content: center;
   justify-content: center;
+  position: absolute;
 }
 .skills-header {
   display: flex;
@@ -198,16 +198,15 @@ img {
 .skills-container {
   width: 100%;
   height: auto;
-  position: relative;
-  background-image: url("Images/SKILLS(Traced1).svg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .skills-list {
   display: grid;
-  grid-template-columns: 16rem 16rem;
-  gap: 90px 120px;
+  grid-template-columns: 16rem 16rem 16rem;
+  gap: 120px 120px;
   margin-top: 30px;
-  place-content: center;
-  position: relative;
   z-index: 1;
 }
 .skills-item {
