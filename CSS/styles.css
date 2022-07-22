@@ -200,11 +200,11 @@ img {
   width: 100%;
 }
 .skills-bg-text {
-  width: 40%;
+  width: 80%;
   height: auto;
-  z-index: 0;
-  position: inherit;
+  z-index: -1;
   display: flex;
+  align-content: center;
   justify-content: center;
 }
 .skills-header {
