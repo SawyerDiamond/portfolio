@@ -45,6 +45,7 @@
         </div>
       </div>
     </header>
+
     <!--<Skills>-->
     <section class="skills">
       <div class="skills-header">
@@ -67,6 +68,14 @@
               <img src="Icons/html.svg" alt="HTML" />
               <img src="Icons/css.svg" alt="CSS" />
               <img src="Icons/sass.svg" alt="SCSS" />
+            </div>
+          </li>
+          <li class="skills-item">
+            <h3>Frameworks</h3>
+            <div class="skills-items-list">
+              <img src="Icons/Bootstrap.svg" alt="Framer" />
+              <img src="Icons/tailwind.svg" alt="Figma" />
+              <img src="Icons/Flowbite.svg" alt="Protopie" />
             </div>
           </li>
           <li class="skills-item">
@@ -94,11 +103,63 @@
             </div>
           </li>
         </ul>
-        <img src="Images/SKILLS.svg" class="skills-bg-text" />
+        <h1 class="skills-bg-text">SKILLS</h1>
       </div>
     </section>
 
+    <!--<Portfolio>-->
+    <section class="projects">
+      <div class="projects-header">
+        <img src="Icons/lightning.svg" class="projects-header-img" alt="" />
+        <h2>PROJECTS</h2>
+      </div>
+      <div class="projects-container">
+        <div class="projects-list">
+          <a class="projects-item">
+            <img
+              src="Images\Gradients\PinkIMG.png"
+              alt="Purple-Pink Gradient"
+            />
+          </a>
+          <a class="projects-item">
+            <img src="Images\Gradients\PurplePinkIMG.png" alt="Avatar" />
+          </a>
+          <a class="projects-item">
+            <img src="Images\Gradients\BlueIMG.png" alt="Avatar" />
+          </a>
+          <a class="projects-item">
+            <img src="Images\Gradients\BlueGreenIMG.png" alt="Avatar" />
+          </a>
+          <a class="projects-item projects-item-large">
+            <img src="Images\Gradients\OrangePinkIMG.png" alt="Avatar" />
+          </a>
+          <a class="projects-item">
+            <img src="Images\Gradients\NavyIMG.png" alt="Avatar" />
+          </a>
+          <a class="projects-item">
+            <img src="Images\Gradients\BeigeRedIMG.png" alt="Avatar" />
+          </a>
+          <a class="projects-item">
+            <img src="Images\Gradients\PinkYellowIMG.png" alt="Avatar" />
+          </a>
+        </div>
+        <h1 class="projects-bg-text">PROJECTS</h1>
+      </div>
+    </section>
     <!--<SCRIPTS>-->
+    <style>
+      @keyframes slide-in {
+        from {
+          transform: translateX(-100%);
+        }
+        to {
+          transform: translateX(0%);
+        }
+      }
+      .projects-item {
+        animation: slide-in 1000ms;
+      }
+    </style>
     <script src="Javascript/scrollreveal.js"></script>
     <script src="Javascript/main.js"></script>
   </body>

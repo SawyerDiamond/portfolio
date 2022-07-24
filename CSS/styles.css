@@ -1,3 +1,11 @@
+/*--<COLORS>--*/
+/*--<GRADIENTS>--*/
+/*--<FONTS>--*/
+/* FONTS */
+/*
+    Gilroy
+    Jeko (Header)
+  */
 /*--<FONTS>--*/
 /* Gilroy Regular */
 @font-face {
@@ -33,21 +41,13 @@
   font-weight: 900;
   font-style: normal;
 }
-/*--<COLORS>--*/
-/*--<GRADIENTS>--*/
-/*--<FONTS>--*/
-/* FONTS */
-/*
-    Gilroy
-    Jeko (Header)
-  */
 /*--<SCROLLBAR>--*/
 body::-webkit-scrollbar {
   width: 10px;
 }
 
 body::-webkit-scrollbar-track {
-  background-color: #0b162c;
+  background-color: #0d1b36;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -65,7 +65,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {
-  background-color: #0b162c;
+  background-color: #0d1b36;
   color: #f8fbff;
 }
 
@@ -92,6 +92,10 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+li {
+  list-style: none;
 }
 
 /*--<HERO>--*/
@@ -175,12 +179,13 @@ img {
   width: 100%;
 }
 .skills-bg-text {
-  width: 110%;
+  font-size: 46vw;
+  color: #0f234d;
   height: auto;
-  z-index: -1;
   display: flex;
-  align-content: center;
   justify-content: center;
+  align-items: center;
+  z-index: -1;
   position: absolute;
 }
 .skills-header {
@@ -188,7 +193,7 @@ img {
   align-content: center;
   margin-left: 3%;
   margin-top: 3%;
-  position: relative;
+  margin-bottom: 3%;
   z-index: 1;
 }
 .skills-header-img {
@@ -223,4 +228,59 @@ img {
   height: 1.2rem;
   padding: 6px;
   margin-top: 3px;
+}
+
+.projects {
+  width: 100%;
+  margin-top: 30rem;
+}
+.projects-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projects-header {
+  display: flex;
+  align-content: center;
+  margin-left: 3%;
+  margin-top: 14rem;
+  margin-bottom: 3%;
+  z-index: 1;
+}
+.projects-header-img {
+  width: 3.4rem;
+  height: auto;
+}
+.projects-item-header {
+  width: 100%;
+}
+.projects-item-large {
+  grid-area: large;
+}
+.projects-item-large img {
+  border-radius: 12%/24%;
+}
+.projects-item:not(.projects-item-large) img {
+  border-radius: 22%;
+}
+.projects-bg-text {
+  transform: rotate(-90deg);
+  z-index: -1;
+  font-size: 46vw;
+  color: #0f234d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.projects-list {
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(3, 16%);
+  grid-template-rows: repeat(3, 33%);
+  gap: 18px 20px;
+  grid-template-areas: ". . ." ". large large" ". . .";
+  z-index: 1;
 }
