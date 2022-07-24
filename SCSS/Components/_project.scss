@@ -235,9 +235,9 @@ li {
   }
   &-header {
     display: flex;
+    justify-content: center;
     align-content: center;
     margin-left: 3%;
-    margin-top: 14rem;
     margin-bottom: 3%;
     z-index: 1;
     &-img {
@@ -262,9 +262,9 @@ li {
     }
   }
   &-bg-text {
-    transform: rotate(-90deg);
+    transform: rotate(-45deg);
     z-index: -1;
-    font-size: $bg-text;
+    font-size: $bg-text-90;
     color: $navy-secondary;
     display: flex;
     justify-content: center;
@@ -274,13 +274,13 @@ li {
   &-list {
     display: grid;
     place-content: center;
-    grid-template-columns: repeat(3, 16%);
-    grid-template-rows: repeat(3, 33%);
-    gap: 18px 20px;
+    grid-template-columns: repeat(3, 37%);
+    grid-template-rows: repeat(3, 37%);
     grid-template-areas:
       ". . ."
       ". large large"
       ". . .";
+    margin-top: 6rem;
     z-index: 1;
   }
 }

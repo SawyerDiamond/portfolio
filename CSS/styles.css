@@ -179,7 +179,7 @@ li {
   width: 100%;
 }
 .skills-bg-text {
-  font-size: 46vw;
+  font-size: 33vw;
   color: #0f234d;
   height: auto;
   display: flex;
@@ -243,9 +243,9 @@ li {
 }
 .projects-header {
   display: flex;
+  justify-content: center;
   align-content: center;
   margin-left: 3%;
-  margin-top: 14rem;
   margin-bottom: 3%;
   z-index: 1;
 }
@@ -266,9 +266,9 @@ li {
   border-radius: 22%;
 }
 .projects-bg-text {
-  transform: rotate(-90deg);
+  transform: rotate(-45deg);
   z-index: -1;
-  font-size: 46vw;
+  font-size: 22vw;
   color: #0f234d;
   display: flex;
   justify-content: center;
@@ -278,9 +278,9 @@ li {
 .projects-list {
   display: grid;
   place-content: center;
-  grid-template-columns: repeat(3, 16%);
-  grid-template-rows: repeat(3, 33%);
-  gap: 18px 20px;
+  grid-template-columns: repeat(3, 37%);
+  grid-template-rows: repeat(3, 37%);
   grid-template-areas: ". . ." ". large large" ". . .";
+  margin-top: 6rem;
   z-index: 1;
 }
