@@ -59,7 +59,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {
-  background: #091d40;
+  background: $navy-primary;
   color: $white-primary;
 }
 
@@ -69,9 +69,10 @@ h1 {
   font-style: normal;
 }
 h2 {
-  font-size: 66px;
+  font-size: 26px;
   font-weight: 800;
   font-style: normal;
+  letter-spacing: 0.1rem;
 }
 p {
   font-weight: 500;
@@ -89,7 +90,53 @@ img {
 li {
   list-style: none;
 }
-
+.top-set {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+/*--<NAV BAR>--*/
+.nav {
+  width: 94%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.6rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1.2rem;
+  z-index: 1;
+  background-color: $navy-secondary;
+  box-shadow: $navy-shadow;
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-left {
+      display: flex;
+      justify-items: center;
+      flex-direction: row;
+      align-items: center;
+      background-color: $navy-primary;
+      padding: 0.75rem;
+      padding-right: 2rem;
+      border-radius: 1.25rem;
+      &-logo {
+        width: 2.4rem;
+        height: auto;
+        border-radius: 0.65rem;
+        margin-left: 1.2rem;
+        margin-right: 0.8rem;
+      }
+    }
+    &-center {
+      display: flex;
+      justify-items: center;
+    }
+  }
+}
 /*--<HERO>--*/
 
 .hero {
@@ -98,11 +145,6 @@ li {
 }
 
 .hero-container {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -142,7 +184,7 @@ li {
 }
 
 .waves {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   z-index: -1;
 }
@@ -226,6 +268,7 @@ li {
 .projects {
   width: 100%;
   margin-top: 26rem;
+  position: absolute;
   &-container {
     width: 100%;
     height: auto;
@@ -239,7 +282,7 @@ li {
     align-content: center;
     z-index: 1;
     &-img {
-      width: 3.4rem;
+      width: 3.5rem;
       height: auto;
       padding-right: 1rem;
     }
@@ -285,5 +328,6 @@ li {
       ". . .";
     margin-top: 6rem;
     z-index: 1;
+    position: absolute;
   }
 }
