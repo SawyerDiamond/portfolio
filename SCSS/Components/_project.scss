@@ -80,6 +80,7 @@ p {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 img {
@@ -120,9 +121,9 @@ li {
       flex-direction: row;
       align-items: center;
       background-color: $navy-primary;
-      padding: 0.75rem;
+      padding: 0.8rem;
       padding-right: 2rem;
-      border-radius: 1.25rem;
+      border-radius: 1.1rem;
       &-logo {
         width: 2.4rem;
         height: auto;
@@ -133,7 +134,43 @@ li {
     }
     &-center {
       display: flex;
+      flex-direction: row;
       justify-items: center;
+      margin: 1rem;
+      &-items {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        padding: 1rem;
+        img {
+          width: 16px;
+          padding: 0.5rem;
+          margin: 0.5rem;
+          border-radius: 0.5rem;
+
+          background-color: $navy-primary;
+        }
+      }
+    }
+    &-right {
+      display: flex;
+      flex-direction: row;
+      justify-items: center;
+      margin: 1rem;
+      &-items {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        padding: 0.5rem;
+        padding-left: 1.5rem;
+        background: $dark-blue;
+        img {
+          width: 16px;
+          padding: 0.5rem;
+          margin: 0.5rem;
+          border-radius: 0.5rem;
+        }
+      }
     }
   }
 }
