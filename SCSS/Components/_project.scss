@@ -275,20 +275,6 @@ li {
       z-index: -1;
       position: absolute;
     }
-    &-small {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row;
-      z-index: -1;
-      &-items {
-        font-size: $bg-text-small;
-        color: $navy-secondary;
-        &-b {
-          font-size: $bg-text-small;
-          color: $navy-secondary;
-        }
-      }
-    }
   }
 
   &-header {

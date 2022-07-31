@@ -1,11 +1,6 @@
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
   .nav {
     &-container {
-      &-left {
-        &-logo {
-          margin-left: 0.6rem;
-        }
-      }
       &-center {
         &-items {
           padding: 0.6rem;
@@ -19,4 +14,32 @@
       }
     }
   }
+  .skills {
+    &-list {
+      grid-template-columns: 16rem 16rem;
+    }
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .nav {
+    height: 3rem;
+    &-container {
+      &-right {
+        margin-right: 0rem;
+        padding-right: 0rem;
+
+        h3 {
+          display: none;
+          margin: none;
+          padding: none;
+        }
+      }
+    }
+    h3 {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
 }
