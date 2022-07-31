@@ -22,31 +22,31 @@
     <nav class="nav top-set">
       <div class="nav-container">
         <div class="nav-container-left">
-          <img src="Images\Logo.svg" class="nav-container-left-logo" />
+          <img src="Images\Logo.svg" class="nav-container-left-logo" alt="" />
           <h2>SAWYER</h2>
         </div>
         <div class="nav-container-center">
           <a href="" class="nav-container-center-items">
-            <img src="Icons/home.svg" />
+            <img src="Icons/home.svg" alt="" />
             <h3>Home</h3>
           </a>
           <a href="" class="nav-container-center-items">
-            <img src="Icons/bolt.svg" />
+            <img src="Icons/bolt.svg" alt="" />
             <h3>Skills</h3>
           </a>
           <a href="" class="nav-container-center-items">
-            <img src="Icons/proj.svg" />
+            <img src="Icons/proj.svg" alt="" />
             <h3>Projects</h3>
           </a>
           <a href="" class="nav-container-center-items">
-            <img src="Icons/edu.svg" />
+            <img src="Icons/edu.svg" alt="" />
             <h3>Education</h3>
           </a>
         </div>
         <div class="nav-container-right">
           <a href="" class="nav-container-right-items">
+            <img src="Icons/Mail.svg" alt="" />
             <h3>Contact</h3>
-            <img src="Icons/Mail.svg" />
           </a>
         </div>
       </div>
@@ -82,6 +82,16 @@
         <img src="Icons/lightning.svg" class="skills-header-img" alt="" />
         <h1>SKILLS</h1>
       </div>
+      <div class="skills-bg-small">
+        <h2 class="skills-bg-small-items">SKILLS</h2>
+        <h2 class="skills-bg-small-items">SKILLS</h2>
+        <h2 class="skills-bg-small-items">SKILLS</h2>
+        <h2 class="skills-bg-small-items">SKILLS</h2>
+        <h2 class="skills-bg-small-items">SKILLS</h2>
+        <h2 class="skills-bg-small-items">SKILLS</h2>
+        <h2 class="skills-bg-small-items">SKILLS</h2>
+      </div>
+
       <div class="skills-container">
         <ul class="skills-list">
           <li class="skills-item">
@@ -135,6 +145,15 @@
         </ul>
         <h1 class="skills-bg-text">SKILLS</h1>
       </div>
+      <div class="skills-bg-small">
+        <h2 class="skills-bg-small-items-b">SKILLS</h2>
+        <h2 class="skills-bg-small-items-b">SKILLS</h2>
+        <h2 class="skills-bg-small-items-b">SKILLS</h2>
+        <h2 class="skills-bg-small-items-b">SKILLS</h2>
+        <h2 class="skills-bg-small-items-b">SKILLS</h2>
+        <h2 class="skills-bg-small-items-b">SKILLS</h2>
+        <h2 class="skills-bg-small-items-b">SKILLS</h2>
+      </div>
     </section>
 
     <!--<Portfolio>-->
@@ -180,18 +199,25 @@
         </div>
       </div>
     </section>
+
     <!--<SCRIPTS>-->
     <style>
       @keyframes slide-in {
         from {
-          transform: translateX(-100%);
+          transform: translateY(100%);
         }
         to {
-          transform: translateX(0%);
+          transform: translateY(0%);
         }
       }
-      .projects-item {
+      .hero-social_list {
+        animation: slide-in 2000ms;
+      }
+      .hero-text {
         animation: slide-in 1000ms;
+      }
+      .hero-logo {
+        animation: slide-in 1600ms;
       }
     </style>
     <script src="Javascript/scrollreveal.js"></script>
