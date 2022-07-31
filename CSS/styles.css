@@ -266,6 +266,10 @@ li {
 .skills {
   width: 100%;
 }
+.skills-bg {
+  display: flex;
+  align-content: space-between;
+}
 .skills-bg-text {
   font-size: 33vw;
   color: #0f234d;
@@ -278,21 +282,17 @@ li {
 }
 .skills-bg-small {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: row;
   z-index: -1;
 }
 .skills-bg-small-items {
   font-size: 4vw;
   color: #0f234d;
-  margin: 1.3rem;
-  margin-bottom: 10rem;
 }
 .skills-bg-small-items-b {
   font-size: 4vw;
   color: #0f234d;
-  margin: 1.3rem;
-  margin-top: 10rem;
 }
 .skills-header {
   display: flex;
@@ -398,4 +398,19 @@ li {
 
 .edu {
   width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .nav-container-left-logo {
+    margin-left: 0.6rem;
+  }
+  .nav-container-center-items {
+    padding: 0.6rem;
+  }
+  .nav-container-center-items img {
+    margin-right: 0.5rem;
+  }
+  .nav-container-center-items h3 {
+    display: none;
+  }
 }

@@ -1,0 +1,22 @@
+@media only screen and (max-width: 1000px) {
+  .nav {
+    &-container {
+      &-left {
+        &-logo {
+          margin-left: 0.6rem;
+        }
+      }
+      &-center {
+        &-items {
+          padding: 0.6rem;
+          img {
+            margin-right: 0.5rem;
+          }
+          h3 {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

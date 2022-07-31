@@ -262,34 +262,35 @@ li {
 
 .skills {
   width: 100%;
-  &-bg-text {
-    font-size: $bg-text;
-    color: $navy-secondary;
-    height: auto;
+  &-bg {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: -1;
-    position: absolute;
-  }
-  &-bg-small {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    z-index: -1;
-    &-items {
-      font-size: $bg-text-small;
+    align-content: space-between;
+    &-text {
+      font-size: $bg-text;
       color: $navy-secondary;
-      margin: 1.3rem;
-      margin-bottom: 10rem;
-      &-b {
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: -1;
+      position: absolute;
+    }
+    &-small {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      z-index: -1;
+      &-items {
         font-size: $bg-text-small;
         color: $navy-secondary;
-        margin: 1.3rem;
-        margin-top: 10rem;
+        &-b {
+          font-size: $bg-text-small;
+          color: $navy-secondary;
+        }
       }
     }
   }
+
   &-header {
     display: flex;
     align-content: center;
