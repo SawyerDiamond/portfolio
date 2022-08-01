@@ -342,18 +342,19 @@ li {
     }
   }
   &-item {
-    width: 100%;
     &-header {
       width: 100%;
     }
     &-large {
       img {
         border-radius: 12%/24%;
+        width: 41.5vw;
       }
       grid-area: large;
     }
     &:not(.projects-item-large) {
       img {
+        width: 20vw;
         border-radius: 22%;
       }
     }

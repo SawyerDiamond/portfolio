@@ -344,9 +344,6 @@ li {
   height: auto;
   padding-right: 1rem;
 }
-.projects-item {
-  width: 100%;
-}
 .projects-item-header {
   width: 100%;
 }
@@ -355,8 +352,10 @@ li {
 }
 .projects-item-large img {
   border-radius: 12%/24%;
+  width: 41.5vw;
 }
 .projects-item:not(.projects-item-large) img {
+  width: 20vw;
   border-radius: 22%;
 }
 .projects-bg-text {
@@ -402,6 +401,12 @@ li {
 }
 @media only screen and (max-width: 1000px) {
   .nav {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-container-left {
     height: 3rem;
   }
   .nav-container-right {
