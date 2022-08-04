@@ -179,7 +179,6 @@ li {
 .nav-container-right-items {
   display: flex;
   align-items: center;
-  flex-direction: row;
   margin-right: 1rem;
   padding-right: 1rem;
   border-radius: 0.8rem;
@@ -353,7 +352,7 @@ li {
 }
 .projects-item-large img {
   border-radius: 12%/24%;
-  width: 42vw;
+  width: 42.8vw;
 }
 .projects-item:not(.projects-item-large) img {
   width: 20vw;
@@ -412,14 +411,11 @@ li {
   .nav-container-left {
     height: 3rem;
   }
-  .nav-container-right {
-    margin-right: 0rem;
-    padding-right: 0rem;
+  .nav-container-right-items {
+    padding-right: 0px;
   }
   .nav-container-right h3 {
     display: none;
-    margin: none;
-    padding: none;
   }
   .nav h3 {
     display: none;

@@ -167,7 +167,6 @@ li {
       &-items {
         display: flex;
         align-items: center;
-        flex-direction: row;
         margin-right: 1rem;
         padding-right: 1rem;
         border-radius: 0.8rem;
@@ -347,7 +346,7 @@ li {
     &-large {
       img {
         border-radius: 12%/24%;
-        width: 42vw;
+        width: 42.8vw;
       }
       grid-area: large;
     }

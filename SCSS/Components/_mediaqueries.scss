@@ -32,13 +32,14 @@
         height: 3rem;
       }
       &-right {
-        margin-right: 0rem;
-        padding-right: 0rem;
+        &-items {
+          padding-right: 0px;
+          img {
+          }
+        }
 
         h3 {
           display: none;
-          margin: none;
-          padding: none;
         }
       }
     }
