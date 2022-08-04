@@ -56,6 +56,10 @@ body::-webkit-scrollbar-thumb {
   scrollbar-color: #0f234d;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #0b162c;
   color: #f8fbff;
@@ -265,6 +269,7 @@ li {
 /*--<SKILLS SECTION>--*/
 .skills {
   width: 100%;
+  margin-top: 8rem;
 }
 .skills-bg {
   display: flex;
@@ -323,7 +328,6 @@ li {
 
 .projects {
   width: 100%;
-  margin-top: 10rem;
   position: absolute;
 }
 .projects-container {
@@ -335,17 +339,14 @@ li {
 }
 .projects-header {
   display: flex;
+  margin-top: 16rem;
   justify-content: center;
-  align-content: center;
   z-index: 1;
 }
 .projects-header-img {
   width: 4.4rem;
   height: auto;
   padding-right: 1rem;
-}
-.projects-item-header {
-  width: 100%;
 }
 .projects-item-large {
   grid-area: large;
@@ -376,7 +377,6 @@ li {
   grid-template-columns: repeat(3, 37%);
   grid-template-rows: repeat(3, 37%);
   grid-template-areas: ". . ." ". large large" ". . .";
-  margin-top: 6rem;
   z-index: 1;
   position: absolute;
 }

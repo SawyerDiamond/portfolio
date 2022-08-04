@@ -51,7 +51,9 @@ body::-webkit-scrollbar-thumb {
   scrollbar-width: 10px;
   scrollbar-color: $navy-secondary;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   background: $navy-primary;
   color: $white-primary;
@@ -262,6 +264,7 @@ li {
 
 .skills {
   width: 100%;
+  margin-top: 8rem;
   &-bg {
     display: flex;
     align-content: space-between;
@@ -321,7 +324,6 @@ li {
 
 .projects {
   width: 100%;
-  margin-top: 10rem;
   position: absolute;
   &-container {
     width: 100%;
@@ -332,8 +334,8 @@ li {
   }
   &-header {
     display: flex;
+    margin-top: 16rem;
     justify-content: center;
-    align-content: center;
     z-index: 1;
     &-img {
       width: 4.4rem;
@@ -342,9 +344,6 @@ li {
     }
   }
   &-item {
-    &-header {
-      width: 100%;
-    }
     &-large {
       img {
         border-radius: 12%/24%;
@@ -381,7 +380,7 @@ li {
       ". . ."
       ". large large"
       ". . .";
-    margin-top: 6rem;
+
     z-index: 1;
     position: absolute;
   }
