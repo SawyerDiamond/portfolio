@@ -3,16 +3,18 @@
     &-container {
       &-center {
         &-items {
-          padding: 0.6rem;
-          img {
-            margin-right: 0.5rem;
-          }
+          display: flex;
+          align-items: flex-start;
           h3 {
             display: none;
           }
         }
       }
     }
+  }
+  .hero-social_list li {
+    width: 0.8rem;
+    height: 0.8rem;
   }
   .skills {
     &-list {
@@ -23,19 +25,23 @@
 @media only screen and (max-width: 1000px) {
   .nav {
     height: 3rem;
+    border-radius: 0.85rem;
     &-container {
       height: 3rem;
       display: flex;
       justify-content: space-between;
-      align-items: flex-start;
+
       &-left {
-        height: 3rem;
+        padding: 0.4rem;
+        padding-right: 0.9rem;
+        border-radius: 1rem;
+        h2 {
+          display: none;
+        }
       }
       &-right {
         &-items {
           padding-right: 0px;
-          img {
-          }
         }
 
         h3 {

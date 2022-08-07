@@ -128,12 +128,10 @@ li {
     }
     &-center {
       display: flex;
-      flex-direction: row;
       justify-items: center;
       &-items {
         display: flex;
         align-items: center;
-        flex-direction: row;
         padding: 1rem;
         border-radius: 0.5rem;
         &:hover {
@@ -241,16 +239,16 @@ li {
 }
 
 .hero-social_list li {
-  width: 1rem;
-  height: 1rem;
+  img {
+    width: 1.6rem;
+  }
   display: grid;
   place-content: center;
-  transform: scale(1.6);
   margin: 40px;
   box-shadow: $navy-shadow;
   background-color: $navy-secondary;
   border-radius: $hero-radius;
-  padding: 4px;
+  padding: 0.5rem;
 }
 
 .hero-social_list li:hover {

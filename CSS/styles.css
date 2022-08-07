@@ -114,7 +114,7 @@ li {
   border-radius: 1.2rem;
   z-index: 1;
   background-color: #0f234d;
-  box-shadow: 0px 0px 30px rgba(11, 22, 44, 0.7411764706);
+  box-shadow: 0px 0px 15px rgba(11, 22, 44, 0.231372549);
 }
 .nav-container {
   display: flex;
@@ -140,13 +140,11 @@ li {
 }
 .nav-container-center {
   display: flex;
-  flex-direction: row;
   justify-items: center;
 }
 .nav-container-center-items {
   display: flex;
   align-items: center;
-  flex-direction: row;
   padding: 1rem;
   border-radius: 0.5rem;
 }
@@ -247,16 +245,16 @@ li {
 }
 
 .hero-social_list li {
-  width: 1rem;
-  height: 1rem;
   display: grid;
   place-content: center;
-  transform: scale(1.6);
   margin: 40px;
-  box-shadow: 0px 0px 30px rgba(11, 22, 44, 0.7411764706);
+  box-shadow: 0px 0px 15px rgba(11, 22, 44, 0.231372549);
   background-color: #0f234d;
   border-radius: 25%;
-  padding: 4px;
+  padding: 0.5rem;
+}
+.hero-social_list li img {
+  width: 1.6rem;
 }
 
 .hero-social_list li:hover {
@@ -316,7 +314,7 @@ li {
   padding: 10px;
   background-color: #0f234d;
   border-radius: 6%/30%;
-  box-shadow: 0px 0px 30px rgba(11, 22, 44, 0.7411764706);
+  box-shadow: 0px 0px 15px rgba(11, 22, 44, 0.231372549);
 }
 .skills-item img {
   width: 1.2rem;
@@ -386,13 +384,15 @@ li {
 
 @media only screen and (max-width: 1200px) {
   .nav-container-center-items {
-    padding: 0.6rem;
-  }
-  .nav-container-center-items img {
-    margin-right: 0.5rem;
+    display: flex;
+    align-items: flex-start;
   }
   .nav-container-center-items h3 {
     display: none;
+  }
+  .hero-social_list li {
+    width: 0.8rem;
+    height: 0.8rem;
   }
   .skills-list {
     grid-template-columns: 16rem 16rem;
@@ -401,15 +401,20 @@ li {
 @media only screen and (max-width: 1000px) {
   .nav {
     height: 3rem;
+    border-radius: 0.85rem;
   }
   .nav-container {
     height: 3rem;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
   }
   .nav-container-left {
-    height: 3rem;
+    padding: 0.4rem;
+    padding-right: 0.9rem;
+    border-radius: 1rem;
+  }
+  .nav-container-left h2 {
+    display: none;
   }
   .nav-container-right-items {
     padding-right: 0px;
