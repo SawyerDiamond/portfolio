@@ -393,6 +393,38 @@ li {
   }
 }
 
-.edu {
+.contact {
   width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50rem;
+  &-header {
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    &-img {
+      width: 4.4rem;
+      height: auto;
+      padding-right: 1rem;
+    }
+  }
+  &-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-bg {
+    position: absolute;
+    &-text {
+      font-size: $bg-text-large;
+      color: $navy-secondary;
+      z-index: -1;
+      margin-top: 0;
+    }
+  }
 }

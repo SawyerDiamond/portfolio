@@ -387,8 +387,40 @@ li {
   z-index: 1;
 }
 
-.edu {
+.contact {
   width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50rem;
+}
+.contact-header {
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+.contact-header-img {
+  width: 4.4rem;
+  height: auto;
+  padding-right: 1rem;
+}
+.contact-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-bg {
+  position: absolute;
+}
+.contact-bg-text {
+  font-size: 21.5vw;
+  color: #0f234d;
+  z-index: -1;
+  margin-top: 0;
 }
 
 @media only screen and (max-width: 1700px) {
