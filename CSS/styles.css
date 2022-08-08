@@ -245,9 +245,7 @@ li {
 }
 
 .hero-social_list li {
-  display: grid;
-  place-content: center;
-  margin: 40px;
+  margin: 2rem;
   box-shadow: 0px 0px 15px rgba(11, 22, 44, 0.231372549);
   background-color: #0f234d;
   border-radius: 25%;
@@ -255,12 +253,25 @@ li {
 }
 .hero-social_list li img {
   width: 1.6rem;
+  height: 1.6rem;
+  display: grid;
+  place-content: center;
 }
 
 .hero-social_list li:hover {
-  background: linear-gradient(87.53deg, #0971f0 -28.38%, #138ef0 109.3%);
-  box-shadow: 0px 0px 10px #105fd6;
   transition: all 1000ms ease;
+}
+.hero-social_list li:hover:nth-child(1) {
+  background-color: #211f1f;
+  box-shadow: 0px 0px 10px #211f1f;
+}
+.hero-social_list li:hover:nth-child(2) {
+  background-color: #ea4c89;
+  box-shadow: 0px 0px 10px #ea4c89;
+}
+.hero-social_list li:hover:nth-child(3) {
+  background-color: #053eff;
+  box-shadow: 0px 0px 10px #053eff;
 }
 
 /*--<SKILLS SECTION>--*/
@@ -284,9 +295,8 @@ li {
 }
 .skills-header {
   display: flex;
+  justify-content: center;
   align-content: center;
-  margin-left: 3%;
-  margin-top: 3%;
   z-index: 1;
 }
 .skills-header-img {
@@ -325,18 +335,15 @@ li {
 
 .projects {
   width: 100%;
-  position: absolute;
-}
-.projects-container {
-  width: 100%;
   height: auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 30rem;
 }
 .projects-header {
   display: flex;
-  margin-top: 16rem;
   justify-content: center;
   z-index: 1;
 }
@@ -358,11 +365,13 @@ li {
 }
 .projects-bg-text {
   display: flex;
+  align-items: flex-start;
   flex-direction: column;
-  margin: 1rem;
+  margin-top: 5rem;
+  z-index: -1;
+  position: absolute;
 }
 .projects-bg-text-item {
-  z-index: -1;
   font-size: 20vw;
   color: #0f234d;
   display: flex;
@@ -371,11 +380,11 @@ li {
 .projects-list {
   display: grid;
   place-content: center;
+  margin-top: 10rem;
   grid-template-columns: repeat(3, 37%);
   grid-template-rows: repeat(3, 37%);
   grid-template-areas: ". . ." ". large large" ". . .";
   z-index: 1;
-  position: absolute;
 }
 
 .edu {
@@ -391,8 +400,16 @@ li {
     display: none;
   }
   .hero-social_list li {
-    width: 0.8rem;
-    height: 0.8rem;
+    margin: 1rem;
+  }
+  .hero-social_list li img {
+    width: 1.2rem;
+    height: 1.2rem;
+    display: grid;
+    place-content: center;
+  }
+  .skills {
+    margin-top: 4rem;
   }
   .skills-list {
     grid-template-columns: 16rem 16rem;

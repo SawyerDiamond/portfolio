@@ -13,10 +13,16 @@
     }
   }
   .hero-social_list li {
-    width: 0.8rem;
-    height: 0.8rem;
+    img {
+      width: 1.2rem;
+      height: 1.2rem;
+      display: grid;
+      place-content: center;
+    }
+    margin: 1rem;
   }
   .skills {
+    margin-top: 4rem;
     &-list {
       grid-template-columns: 16rem 16rem;
     }
