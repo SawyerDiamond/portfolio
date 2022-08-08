@@ -391,6 +391,16 @@ li {
   width: 100%;
 }
 
+@media only screen and (max-width: 1700px) {
+  .projects {
+    margin-top: 20rem;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .projects {
+    margin-top: 14rem;
+  }
+}
 @media only screen and (max-width: 1200px) {
   .nav-container-center-items {
     display: flex;
@@ -413,6 +423,9 @@ li {
   }
   .skills-list {
     grid-template-columns: 16rem 16rem;
+  }
+  .projects {
+    margin-top: 8rem;
   }
 }
 @media only screen and (max-width: 1000px) {
