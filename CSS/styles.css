@@ -413,8 +413,8 @@ li {
 .contact-container-list li {
   display: flex;
   flex-direction: row;
-  padding: 1.2rem;
-  border-radius: 1.2rem;
+  padding: 1rem;
+  border-radius: 1rem;
   background-color: #7289da;
   box-shadow: 0px 0px 10px rgba(114, 137, 218, 0.2274509804);
 }
@@ -479,15 +479,24 @@ li {
     justify-content: space-between;
   }
   .nav-container-left {
-    padding: 0.4rem;
-    padding-right: 0.9rem;
-    border-radius: 1rem;
+    padding: 0;
+  }
+  .nav-container-left-logo {
+    width: 3rem;
+    border-radius: 0.9rem;
+    margin-left: 0;
+    margin-right: 0;
   }
   .nav-container-left h2 {
     display: none;
   }
   .nav-container-right-items {
     padding-right: 0px;
+    margin-right: 0;
+    border-radius: 1rem;
+  }
+  .nav-container-right-items img {
+    padding: 1rem;
   }
   .nav-container-right h3 {
     display: none;

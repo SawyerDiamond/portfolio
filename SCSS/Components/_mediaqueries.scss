@@ -52,9 +52,13 @@
       justify-content: space-between;
 
       &-left {
-        padding: 0.4rem;
-        padding-right: 0.9rem;
-        border-radius: 1rem;
+        padding: 0;
+        &-logo {
+          width: 3rem;
+          border-radius: 0.9rem;
+          margin-left: 0;
+          margin-right: 0;
+        }
         h2 {
           display: none;
         }
@@ -62,6 +66,11 @@
       &-right {
         &-items {
           padding-right: 0px;
+          margin-right: 0;
+          border-radius: 1rem;
+          img {
+            padding: 1rem;
+          }
         }
 
         h3 {
