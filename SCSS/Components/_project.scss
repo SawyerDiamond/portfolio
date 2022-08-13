@@ -10,6 +10,8 @@
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
 }
 @font-face {
   font-family: "Gilroy";
@@ -21,6 +23,8 @@
   font-weight: 500;
   font-style: normal;
   font-display: swap;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
 }
 
 @font-face {
@@ -33,6 +37,8 @@
   font-weight: 600;
   font-style: normal;
   font-display: swap;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
 }
 @font-face {
   font-family: "Gilroy";
@@ -44,6 +50,8 @@
   font-weight: bold;
   font-style: normal;
   font-display: swap;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
 }
 @font-face {
   font-family: "Gilroy";
@@ -70,7 +78,7 @@ body::-webkit-scrollbar-thumb {
 * {
   padding: 0;
   margin: 0;
-  font-family: "Gilroy", "Segoe UI", sans-serif;
+  font-family: "Gilroy", "Segoe UI";
   scrollbar-width: 10px;
   scrollbar-color: $navy-secondary;
 }
@@ -81,20 +89,26 @@ body {
   background: $navy-primary;
   color: $white-primary;
 }
-
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Gilroy", "Segoe UI";
+}
 h1 {
   font-size: 90px;
-  font-weight: 900;
+  font-weight: bold;
   font-style: normal;
 }
 h2 {
   font-size: 26px;
-  font-weight: 800;
+  font-weight: 600;
   font-style: normal;
   letter-spacing: 0.1rem;
 }
 p {
-  font-weight: 500;
+  font-family: "Gilroy", "Segoe UI";
+  font-weight: normal;
 }
 
 a {
@@ -441,12 +455,18 @@ li {
     &-list {
       a {
         display: flex;
+        justify-content: space-between;
         flex-direction: row;
         padding: 1rem;
+        margin: 2rem;
         border-radius: 1rem;
         background-color: #7289da;
         box-shadow: 0px 0px 10px #7289da3a;
+        &:nth-child(1) {
+          margin-top: 0;
+        }
         img {
+          width: 1.15rem;
           margin-right: 1rem;
         }
       }
