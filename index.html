@@ -19,7 +19,7 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <nav class="nav top-set">
+    <nav class="nav top-set" id="navbar">
       <div class="nav-container">
         <div class="nav-container-left">
           <img src="Images\Logo.svg" class="nav-container-left-logo" alt="" />
@@ -59,7 +59,6 @@
           class="hero-text"
           alt="Hi. I'm Sawyer, an aspiring Web Developer and Designer"
         />
-        
         <div class="hero-container_right">
           <img src="Images\Logo.svg" class="hero-logo" alt="Sawyer's Logo" />
           <ul class="hero-social_list">
@@ -76,12 +75,13 @@
             <li>
               <a href="https://www.behance.net/sawyerd">
                 <img src="Icons/Behance.svg" alt="Behance" />
-              </a>
+              </a id="skills-point">
             </li>
           </ul>
         </div>
       </div>
     </header>
+    
 
     <!--<Skills>-->
     <section class="skills">
@@ -133,25 +133,27 @@
           </li>
           <li class="skills-item">
             <h3>UI/UX</h3>
-            <div class="skills-items-list">
+            <div class="skills-items-list"  id="projects-point">
               <img src="Icons/figma.svg" alt="Figma" />
               <img src="Icons/protopie.svg" alt="Protopie" />
               <img src="Icons/framer.svg" alt="Framer" />
             </div>
           </li>
         </ul>
-        <h1 class="skills-bg skills-bg-text" id="skills-point">SKILLS</h1>
       </div>
     </section>
 
     <!--<Portfolio>-->
     <section class="projects">
-      <div class="projects-header" id="projects-point">
+      <div class="projects-header">
         <img src="Icons/projects.svg" class="projects-header-img" alt="" />
         <h1>PROJECTS</h1>
       </div>
         <div class="projects-list">
           <a class="projects-item">
+            <div class="projects-item-active">
+              <h2>Portfolio</h2>
+            </div>
             <img
               src="Images\Gradients\PinkIMG.png"
               alt="Purple-Pink Gradient"
@@ -179,13 +181,6 @@
             <img src="Images\Gradients\PinkYellowIMG.png" alt="Avatar" />
           </a>
         </div>
-        <div class="projects-bg-text">
-          <h1 class="projects-bg-text-item">PROJECTS</h1>
-          <h1 class="projects-bg-text-item">PROJECTS</h1>
-          <h1 class="projects-bg-text-item">PROJECTS</h1>
-          <h1 class="projects-bg-text-item">PROJECTS</h1>
-
-        </div>
     </section>    
     <!--<Education>-->
     <section class="edu">
@@ -196,29 +191,23 @@
         <div class="edu-container">
           <ul class="edu-container-list">
             <a>
-              <img src="Icons/english.svg" alt="Discord" />
-              <h3>English</h3>
+              <h3>English</h3><img src="Icons/english.svg" alt="Discord" />
+              
             </a>
             <a>
-              <img src="Icons/math.svg" alt="Email" />
-              <h3>Math</h3>
+              <h3>Math</h3><img src="Icons/math.svg" alt="Email" />
+              
             </a>
             <a>
-              <img src="Icons/reading.svg" alt="Discord" />
-              <h3>Reading</h3>
+              <h3>Reading</h3><img src="Icons/reading.svg" alt="Discord" />
+              
             </a>
             <a>
-              <img src="Icons/science.svg" alt="Discord" />
-              <h3>Science</h3>
+              <h3>Science</h3><img src="Icons/science.svg" alt="Discord" />
+              
             </a>
             
           </ul>
-          <div class="edu-bg">
-            <h1 class="edu-bg-text" id="edu-point">EDUCATION EDUCATION EDUCATION</h1>
-            <h1 class="edu-bg-text" id="edu-point">EDUCATION EDUCATION EDUCATION</h1>
-            <h1 class="edu-bg-text" id="edu-point">EDUCATION EDUCATION EDUCATION</h1>
-            <h1 class="edu-bg-text" id="edu-point">EDUCATION EDUCATION EDUCATION</h1>
-          </div>
         </div>
       </section>
     
@@ -243,7 +232,6 @@
         animation: slide-in 1600ms;
       }
     </style>
-    <script src="Javascript/scrollreveal.js"></script>
-    <script src="Javascript/main.js"></script>
-  </body>
+    <script src="Javascript\main.js"></script>
+      </body>
 </html>
