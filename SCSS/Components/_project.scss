@@ -87,6 +87,8 @@ html {
 }
 body {
   background-color: $navy-primary;
+  background-image: url("/NavyWaves.svg");
+  background-size: contain;
   color: $white-primary;
 }
 h1,
