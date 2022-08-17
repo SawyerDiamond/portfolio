@@ -80,7 +80,7 @@ html {
 body {
   background-color: #0b162c;
   background-image: url("/NavyWaves.svg");
-  background-size: contain;
+  background-size: cover;
   color: #f8fbff;
 }
 
