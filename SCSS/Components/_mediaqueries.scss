@@ -108,4 +108,10 @@
       }
     }
   }
+  .skills {
+    margin-top: 4rem;
+    &-list {
+      gap: 80px;
+    }
+  }
 }
