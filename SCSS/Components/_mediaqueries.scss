@@ -52,23 +52,26 @@
       justify-content: space-between;
 
       &-left {
-        padding: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+        border-radius: 0.9rem;
         &-logo {
-          width: 3rem;
-          height: 3rem;
-          border-radius: 0.85rem;
+          border-radius: inherit;
           margin-left: 0;
           margin-right: 0;
+          width: 3rem;
+          height: 3rem;
         }
         h2 {
-          display: none;
+          margin-left: 1rem;
         }
       }
       &-right {
         &-items {
           padding-right: 0px;
           margin-right: 0;
-          border-radius: 1rem;
+          border-radius: 0.8rem;
           img {
             padding: 1rem;
           }
@@ -85,5 +88,24 @@
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 850px) {
+  #responsive-menu {
+    display: block;
+  }
+  .nav {
+    &-container {
+      &-left {
+        display: none;
+      }
+      &-right {
+        padding: 1rem;
+        border-radius: 0.5rem;
+        img {
+          width: 16px;
+          padding: 0.5rem;
+          border-radius: 0.25rem;
+        }
+      }
+    }
+  }
 }

@@ -140,6 +140,9 @@ li {
   width: 100%;
 }
 /*--<NAV BAR>--*/
+#responsive_menu {
+  display: none;
+}
 .nav {
   width: 94%;
   height: 4rem;
@@ -166,7 +169,7 @@ li {
       &-logo {
         width: 2.4rem;
         height: auto;
-        border-radius: 0.65rem;
+        border-radius: 0.85rem;
         margin-left: 1.2rem;
         margin-right: 0.8rem;
       }
@@ -459,7 +462,7 @@ li {
         padding: 1rem;
         margin: 2rem;
         border-radius: 1rem;
-        background-color: $navy-secondary;
+        background-color: $navy-primary;
         img {
           width: 1.15rem;
         }
@@ -474,7 +477,7 @@ li {
         }
       }
       &-numb {
-        background-color: $navy-primary;
+        background-color: $navy-secondary;
         border-radius: 0.25rem;
         padding: 0.25rem;
       }

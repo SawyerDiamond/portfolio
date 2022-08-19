@@ -139,6 +139,10 @@ li {
 }
 
 /*--<NAV BAR>--*/
+#responsive_menu {
+  display: none;
+}
+
 .nav {
   width: 94%;
   height: 4rem;
@@ -168,7 +172,7 @@ li {
 .nav-container-left-logo {
   width: 2.4rem;
   height: auto;
-  border-radius: 0.65rem;
+  border-radius: 0.85rem;
   margin-left: 1.2rem;
   margin-right: 0.8rem;
 }
@@ -448,7 +452,7 @@ li {
   padding: 1rem;
   margin: 2rem;
   border-radius: 1rem;
-  background-color: #0f234d;
+  background-color: #0b162c;
 }
 .edu-container-list a img {
   width: 1.15rem;
@@ -463,7 +467,7 @@ li {
   margin-right: 0.4rem;
 }
 .edu-container-list-numb {
-  background-color: #0b162c;
+  background-color: #0f234d;
   border-radius: 0.25rem;
   padding: 0.25rem;
 }
@@ -516,22 +520,25 @@ li {
     justify-content: space-between;
   }
   .nav-container-left {
-    padding: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    border-radius: 0.9rem;
   }
   .nav-container-left-logo {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 0.85rem;
+    border-radius: inherit;
     margin-left: 0;
     margin-right: 0;
+    width: 3rem;
+    height: 3rem;
   }
   .nav-container-left h2 {
-    display: none;
+    margin-left: 1rem;
   }
   .nav-container-right-items {
     padding-right: 0px;
     margin-right: 0;
-    border-radius: 1rem;
+    border-radius: 0.8rem;
   }
   .nav-container-right-items img {
     padding: 1rem;
@@ -541,5 +548,22 @@ li {
   }
   .nav h3 {
     display: none;
+  }
+}
+@media only screen and (max-width: 850px) {
+  #responsive-menu {
+    display: block;
+  }
+  .nav-container-left {
+    display: none;
+  }
+  .nav-container-right {
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+  .nav-container-right img {
+    width: 16px;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
   }
 }
