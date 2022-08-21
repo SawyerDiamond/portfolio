@@ -107,7 +107,7 @@ h2 {
 
 p {
   font-family: "Gilroy", "Segoe UI";
-  font-weight: normal;
+  font-weight: 600;
 }
 
 a {
@@ -124,6 +124,15 @@ li {
   list-style: none;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #0b162c;
+}
+
 .top-set {
   position: absolute;
   top: 0px;
@@ -138,11 +147,17 @@ li {
   width: 100%;
 }
 
-/*--<NAV BAR>--*/
-#responsive_menu {
+.responsive_phone {
   display: none;
+  padding: 0;
+  margin: 0;
 }
 
+.responsive_desktop {
+  display: block;
+}
+
+/*--<NAV BAR>--*/
 .nav {
   width: 94%;
   height: 4rem;
@@ -398,7 +413,7 @@ li {
   border-radius: 22%;
 }
 .projects-item:not(.projects-item-large):hover img {
-  transition: ease-in 0.5s;
+  transition: ease-in 0.25s;
   opacity: 0;
 }
 .projects-list {
@@ -432,44 +447,40 @@ li {
   height: auto;
   padding-right: 1rem;
 }
-.edu-container {
+.edu-list {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.edu-container-list {
+.edu-list ul {
   margin-top: 4rem;
   display: flex;
   flex-direction: column;
 }
-.edu-container-list a {
+.edu-list-item {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  align-content: center;
   padding: 1rem;
   margin: 2rem;
   border-radius: 1rem;
   background-color: #0b162c;
 }
-.edu-container-list a img {
+.edu-list-item :nth-child(1) {
+  background-image: url("/Images/BG1.png");
+}
+.edu-list-item img {
   width: 1.15rem;
 }
-.edu-container-list-desc {
+.edu-list-item-desc {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-right: 2rem;
 }
-.edu-container-list-desc img {
+.edu-list-item-desc img {
   margin-right: 0.4rem;
-}
-.edu-container-list-numb {
-  background-color: #0f234d;
-  border-radius: 0.25rem;
-  padding: 0.25rem;
 }
 
 @media only screen and (max-width: 1700px) {
@@ -551,7 +562,7 @@ li {
   }
 }
 @media only screen and (max-width: 850px) {
-  #responsive-menu {
+  .responsive-menu {
     display: block;
   }
   .nav-container-left {
@@ -571,5 +582,34 @@ li {
   }
   .skills-list {
     gap: 80px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .responsive_phone {
+    display: block;
+  }
+  .responsive_desktop {
+    display: none;
+  }
+  .skills {
+    margin-top: 4rem;
+  }
+  .skills-list {
+    grid-template-columns: 16rem;
+  }
+  .nav-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .nav-container-center {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-container-center:nth-child(5) {
+    margin: 0;
   }
 }

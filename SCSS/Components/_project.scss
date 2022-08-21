@@ -111,7 +111,7 @@ h2 {
 }
 p {
   font-family: "Gilroy", "Segoe UI";
-  font-weight: normal;
+  font-weight: 600;
 }
 
 a {
@@ -127,6 +127,14 @@ img {
 li {
   list-style: none;
 }
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: $navy-primary;
+}
 .top-set {
   position: absolute;
   top: 0px;
@@ -139,10 +147,17 @@ li {
   top: 0;
   width: 100%;
 }
-/*--<NAV BAR>--*/
-#responsive_menu {
+.responsive_phone {
   display: none;
+  padding: 0;
+  margin: 0;
 }
+.responsive_desktop {
+  display: block;
+}
+
+/*--<NAV BAR>--*/
+
 .nav {
   width: 94%;
   height: 4rem;
@@ -402,7 +417,7 @@ li {
         height: 20vw;
         border-radius: 22%;
         img {
-          transition: ease-in 0.5s;
+          transition: ease-in 0.25s;
           opacity: 0;
         }
       }
@@ -444,28 +459,29 @@ li {
       padding-right: 1rem;
     }
   }
-  &-container {
+  &-list {
     width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    &-list {
+    & ul {
       margin-top: 4rem;
       display: flex;
       flex-direction: column;
-      a {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-content: center;
-        padding: 1rem;
-        margin: 2rem;
-        border-radius: 1rem;
-        background-color: $navy-primary;
-        img {
-          width: 1.15rem;
-        }
+    }
+    &-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem;
+      margin: 2rem;
+      border-radius: 1rem;
+      :nth-child(1) {
+        background-image: url("/Images/BG1.png");
+      }
+      background-color: $navy-primary;
+      img {
+        width: 1.15rem;
       }
       &-desc {
         display: flex;
@@ -475,11 +491,6 @@ li {
         img {
           margin-right: 0.4rem;
         }
-      }
-      &-numb {
-        background-color: $navy-secondary;
-        border-radius: 0.25rem;
-        padding: 0.25rem;
       }
     }
   }

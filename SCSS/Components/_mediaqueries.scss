@@ -89,7 +89,7 @@
 }
 
 @media only screen and (max-width: 850px) {
-  #responsive-menu {
+  .responsive-menu {
     display: block;
   }
   .nav {
@@ -112,6 +112,38 @@
     margin-top: 4rem;
     &-list {
       gap: 80px;
+    }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .responsive_phone {
+    display: block;
+  }
+  .responsive_desktop {
+    display: none;
+  }
+  .skills {
+    margin-top: 4rem;
+    &-list {
+      grid-template-columns: 16rem;
+    }
+  }
+  .nav {
+    &-container {
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      &-center {
+        &:nth-child(5) {
+          margin: 0;
+        }
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
     }
   }
 }
