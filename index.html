@@ -232,17 +232,25 @@
         </div>
       </section>
       <section class="contact">
-        <form action="https://formspree.io/f/mrgdbzzv" method="POST">
-          <label>
-            Email <Address></Address>:
-            <input type="email" name="email">
-          </label>
-          <label>
-            Message:
-            <textarea name="message"></textarea>
-          </label>
-            <!-- your other form fields go here -->
-            <button type="submit">Send</button>
+        <div class="contact-header">
+          <img src="Icons/Contact.svg" class="contact-header-img" alt="" />
+          <h1>CONTACT</h1>
+        </div>
+        <form action="https://formspree.io/f/mrgdbzzv" method="POST" class="contact-field">
+          <div class="input-group">
+            <label class="label"> | Name</label>
+            <input autocomplete="off" name="name" class="input" type=text>
+          </div>
+          <div class="input-group">
+            <label class="label"> | Email Address</label>
+            <input name="email" class="input" type="email">
+          </div>
+
+          <div class="input-group">
+            <label class="label">| Message</label>
+            <textarea autocomplete="off" name="message" class="input" rows="5" cols="33"></textarea>
+          </div>
+          <button type="submit" class="contact-field-button">Send</button>
         </form>
       </section>
 
