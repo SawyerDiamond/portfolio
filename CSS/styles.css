@@ -130,7 +130,7 @@ footer {
   margin-top: 1rem;
   margin-bottom: 1rem;
   font-weight: 600;
-  color: #0b162c;
+  color: white;
 }
 
 .top-set {
@@ -330,13 +330,13 @@ footer {
 /*--<SKILLS SECTION>--*/
 .skills {
   width: 100%;
-  margin-top: 10rem;
 }
 .skills-header {
   display: flex;
   justify-content: center;
   align-content: center;
   z-index: 1;
+  margin-top: 5rem;
 }
 .skills-header-img {
   width: 4rem;
@@ -439,7 +439,6 @@ footer {
 .edu-header {
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
   z-index: 1;
 }
 .edu-header-img {
@@ -455,7 +454,6 @@ footer {
   align-items: center;
 }
 .edu-list ul {
-  margin-top: 4rem;
   display: flex;
   flex-direction: column;
 }
@@ -482,6 +480,7 @@ footer {
 
 .contact {
   width: 100%;
+  margin-top: 8rem;
 }
 .contact-header {
   display: flex;
@@ -541,7 +540,14 @@ footer {
   border-color: #0971f0;
 }
 .contact-list-send {
+  display: flex;
+  justify-items: center;
   width: 4rem;
+  padding: 0.6rem;
+  border-radius: 0.6rem;
+  color: white;
+  background-color: #0971f0;
+  border: none;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -637,10 +643,13 @@ footer {
     margin-top: 4rem;
   }
   .skills-list {
-    gap: 80px;
+    gap: 40px;
   }
 }
 @media only screen and (max-width: 650px) {
+  h1 {
+    font-size: 4.5rem;
+  }
   .responsive_phone {
     display: block;
   }
@@ -667,5 +676,17 @@ footer {
   }
   .nav-container-center:nth-child(5) {
     margin: 0;
+  }
+  .skills-header-img {
+    width: 3.4rem;
+  }
+  .projects-header-img {
+    width: 3.6rem;
+  }
+  .edu-header-img {
+    width: 3.8rem;
+  }
+  .contact-header-img {
+    width: 3.8rem;
   }
 }

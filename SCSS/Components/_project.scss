@@ -133,7 +133,7 @@ footer {
   margin-top: 1rem;
   margin-bottom: 1rem;
   font-weight: 600;
-  color: $navy-primary;
+  color: white;
 }
 .top-set {
   position: absolute;
@@ -335,12 +335,12 @@ footer {
 
 .skills {
   width: 100%;
-  margin-top: 10rem;
   &-header {
     display: flex;
     justify-content: center;
     align-content: center;
     z-index: 1;
+    margin-top: 5rem;
     &-img {
       width: 4rem;
       height: auto;
@@ -450,7 +450,6 @@ footer {
   &-header {
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
     z-index: 1;
     &-img {
       width: 4.4rem;
@@ -465,7 +464,6 @@ footer {
     justify-content: center;
     align-items: center;
     & ul {
-      margin-top: 4rem;
       display: flex;
       flex-direction: column;
     }
@@ -494,6 +492,7 @@ footer {
 
 .contact {
   width: 100%;
+  margin-top: 8rem;
   &-header {
     display: flex;
     justify-content: center;
@@ -553,7 +552,14 @@ footer {
       }
     }
     &-send {
+      display: flex;
+      justify-items: center;
       width: 4rem;
+      padding: 0.6rem;
+      border-radius: 0.6rem;
+      color: white;
+      background-color: $dark-blue;
+      border: none;
     }
   }
 }
