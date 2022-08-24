@@ -493,6 +493,7 @@ footer {
 }
 
 .contact {
+  width: 100%;
   &-header {
     display: flex;
     justify-content: center;
@@ -504,53 +505,55 @@ footer {
       padding-right: 1rem;
     }
   }
-  &-field {
+  &-list {
     display: flex;
     flex-direction: column;
-    &-item {
+    justify-content: center;
+    &-input {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      justify-content: center;
+      margin: 1rem;
+
+      &:hover .contact-list-input-label {
+        color: $white-primary;
+        &::first-letter {
+          color: $dark-blue;
+        }
+      }
+      &-label {
+        display: block;
+        margin-bottom: 0.3rem;
+        font-size: 1rem;
+        font-weight: bold;
+        color: $white-secondary;
+        transition: color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s;
+        &:hover {
+          color: $white-primary;
+          &::first-letter {
+            color: $dark-blue;
+          }
+        }
+      }
+      &-field {
+        color: white;
+        font-size: 0.8rem;
+        font-weight: 600;
+
+        background-color: $navy-primary;
+        box-shadow: $navy-shadow;
+        border-radius: 0.85rem;
+        padding: 1rem;
+        border: 2px solid transparent;
+        &:hover,
+        :focus {
+          outline: none;
+          border-color: $dark-blue;
+        }
+      }
     }
-  }
-}
-.input {
-  & input {
-    max-width: 190px;
-    height: 44px;
-  }
-  color: white;
-  background-color: $navy-primary;
-  box-shadow: $navy-shadow;
-  border-radius: 0.5rem;
-  padding: 1rem;
-  border: 2px solid transparent;
-  font-size: 0.8rem;
-  transition: border-color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s,
-    color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s,
-    background 0.2s cubic-bezier(0.25, 0.01, 0.25, 1) 0s;
-}
-
-.label {
-  display: block;
-  margin-bottom: 0.3rem;
-  font-size: 1rem;
-  font-weight: bold;
-  color: $white-secondary;
-  transition: color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s;
-}
-
-.input:hover,
-.input:focus,
-.input-group:hover .input {
-  outline: none;
-  border-color: $dark-blue;
-}
-
-.input-group:hover .label,
-.input:focus {
-  color: $white-primary;
-  &::first-letter {
-    color: $dark-blue;
+    &-send {
+      width: 4rem;
+    }
   }
 }
