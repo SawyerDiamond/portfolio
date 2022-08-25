@@ -167,7 +167,7 @@ footer {
   border-radius: 1.2rem;
   z-index: 2;
   background-color: #0f234d;
-  box-shadow: 0px 0px 15px rgba(11, 22, 44, 0.231372549);
+  filter: drop-shadow(0px 0px 30px rgba(11, 22, 44, 0.0666666667));
 }
 .nav-container {
   display: flex;
@@ -299,7 +299,7 @@ footer {
 
 .hero-social_list li {
   margin: 2rem;
-  box-shadow: 0px 0px 15px rgba(11, 22, 44, 0.231372549);
+  box-shadow: drop-shadow(0px 0px 30px rgba(11, 22, 44, 0.0666666667));
   background-color: #0f234d;
   border-radius: 25%;
   padding: 0.5rem;
@@ -363,7 +363,7 @@ footer {
   padding: 10px;
   background-color: #0f234d;
   border-radius: 6%/30%;
-  box-shadow: 0px 0px 15px rgba(11, 22, 44, 0.231372549);
+  box-shadow: drop-shadow(0px 0px 30px rgba(11, 22, 44, 0.0666666667));
 }
 .skills-item img {
   width: 1.2rem;
@@ -464,6 +464,7 @@ footer {
   margin: 2rem;
   border-radius: 1rem;
   background-color: #0b162c;
+  box-shadow: 0px 0px 15px rgba(11, 22, 44, 0.0549019608);
 }
 .edu-list-item img {
   width: 1.15rem;
@@ -476,6 +477,9 @@ footer {
 }
 .edu-list-item-desc img {
   margin-right: 0.4rem;
+}
+.edu-list-item-numb {
+  color: #0f234d;
 }
 
 .contact {
@@ -531,7 +535,7 @@ footer {
   font-size: 0.8rem;
   font-weight: 600;
   background-color: #0b162c;
-  box-shadow: 0px 0px 15px rgba(11, 22, 44, 0.231372549);
+  box-shadow: drop-shadow(0px 0px 30px rgba(11, 22, 44, 0.0666666667));
   border-radius: 0.85rem;
   padding: 1rem;
   border: 2px solid transparent;

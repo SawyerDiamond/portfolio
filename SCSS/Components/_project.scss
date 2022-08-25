@@ -167,7 +167,7 @@ footer {
   border-radius: 1.2rem;
   z-index: 2;
   background-color: $navy-secondary;
-  box-shadow: $navy-shadow;
+  filter: $navy-shadow;
   &-container {
     display: flex;
     justify-content: space-between;
@@ -210,7 +210,7 @@ footer {
         }
         &:hover img {
           background: linear-gradient(0deg, $dark-blue, $light-blue);
-          box-shadow: $blue-shadow;
+          filter: $navy-shadow;
           transition: all 1000ms ease;
         }
         img {
@@ -309,7 +309,7 @@ footer {
   }
 
   margin: 2rem;
-  box-shadow: $navy-shadow;
+  filter: $navy-shadow;
   background-color: $navy-secondary;
   border-radius: $hero-radius;
   padding: 0.5rem;
@@ -367,7 +367,7 @@ footer {
     padding: 10px;
     background-color: $navy-secondary;
     border-radius: 6%/30%;
-    box-shadow: $navy-shadow;
+    filter: $navy-shadow;
     img {
       width: 1.2rem;
       height: 1.2rem;
@@ -474,6 +474,7 @@ footer {
       margin: 2rem;
       border-radius: 1rem;
       background-color: $navy-primary;
+      box-shadow: $navy-shadow-small;
       img {
         width: 1.15rem;
       }
@@ -485,6 +486,9 @@ footer {
         img {
           margin-right: 0.4rem;
         }
+      }
+      &-numb {
+        color: $navy-secondary;
       }
     }
   }
@@ -539,9 +543,8 @@ footer {
         color: white;
         font-size: 0.8rem;
         font-weight: 600;
-
         background-color: $navy-primary;
-        box-shadow: $navy-shadow;
+        filter: $navy-shadow;
         border-radius: 0.85rem;
         padding: 1rem;
         border: 2px solid transparent;
