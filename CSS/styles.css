@@ -503,6 +503,8 @@ footer {
   flex-direction: column;
   justify-content: center;
   margin: 1rem;
+  margin-left: 35vw;
+  margin-right: 35vw;
 }
 .contact-list-input:hover .contact-list-input-label {
   color: #f8fbff;
@@ -553,6 +555,10 @@ footer {
 @media only screen and (max-width: 1400px) {
   .projects {
     margin-top: 14rem;
+  }
+  .contact-list-input {
+    margin-left: 28vw;
+    margin-right: 28vw;
   }
 }
 @media only screen and (max-width: 1200px) {

@@ -2,6 +2,14 @@
   .projects {
     margin-top: 14rem;
   }
+  .contact {
+    &-list {
+      &-input {
+        margin-left: 28vw;
+        margin-right: 28vw;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 1200px) {

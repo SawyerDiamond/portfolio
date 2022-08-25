@@ -513,7 +513,8 @@ footer {
       flex-direction: column;
       justify-content: center;
       margin: 1rem;
-
+      margin-left: 35vw;
+      margin-right: 35vw;
       &:hover .contact-list-input-label {
         color: $white-primary;
         &::first-letter {
