@@ -72,6 +72,9 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: $navy-secondary;
   border-radius: 10px;
+  &:hover {
+    background-color: $dark-blue;
+  }
 }
 
 /*--<PRESETS>--*/
@@ -87,7 +90,6 @@ html {
 }
 body {
   background-color: $navy-primary;
-  background-image: url("/NavyWaves.svg");
   background-size: cover;
   color: $white-primary;
 }
@@ -473,8 +475,8 @@ footer {
       padding: 1rem;
       margin: 2rem;
       border-radius: 1rem;
-      background-color: $navy-primary;
-      box-shadow: $navy-shadow-small;
+      background-color: $navy-secondary;
+      filter: drop-shadow(0px 0px 30px #0b162c11);
       img {
         width: 1.15rem;
       }
@@ -543,15 +545,19 @@ footer {
         color: white;
         font-size: 0.8rem;
         font-weight: 600;
-        background-color: $navy-primary;
+        background-color: $navy-secondary;
         filter: $navy-shadow;
         border-radius: 0.85rem;
         padding: 1rem;
         border: 2px solid transparent;
+        resize: none;
         &:hover,
         :focus {
           outline: none;
           border-color: $dark-blue;
+        }
+        &::-webkit-scrollbar {
+          width: 0px;
         }
       }
     }

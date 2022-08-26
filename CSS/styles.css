@@ -63,6 +63,9 @@ body::-webkit-scrollbar-thumb {
   background-color: #0f234d;
   border-radius: 10px;
 }
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #0971f0;
+}
 
 /*--<PRESETS>--*/
 * {
@@ -79,7 +82,6 @@ html {
 
 body {
   background-color: #0b162c;
-  background-image: url("/NavyWaves.svg");
   background-size: cover;
   color: #f8fbff;
 }
@@ -214,7 +216,7 @@ footer {
 }
 .nav-container-center-items:hover img {
   background: linear-gradient(0deg, #0971f0, #138ef0);
-  box-shadow: 0px 0px 10px #105fd6;
+  filter: drop-shadow(0px 0px 30px rgba(11, 22, 44, 0.0666666667));
   transition: all 1000ms ease;
 }
 .nav-container-center-items img {
@@ -299,7 +301,7 @@ footer {
 
 .hero-social_list li {
   margin: 2rem;
-  box-shadow: drop-shadow(0px 0px 30px rgba(11, 22, 44, 0.0666666667));
+  filter: drop-shadow(0px 0px 30px rgba(11, 22, 44, 0.0666666667));
   background-color: #0f234d;
   border-radius: 25%;
   padding: 0.5rem;
@@ -363,7 +365,7 @@ footer {
   padding: 10px;
   background-color: #0f234d;
   border-radius: 6%/30%;
-  box-shadow: drop-shadow(0px 0px 30px rgba(11, 22, 44, 0.0666666667));
+  filter: drop-shadow(0px 0px 30px rgba(11, 22, 44, 0.0666666667));
 }
 .skills-item img {
   width: 1.2rem;
@@ -463,8 +465,8 @@ footer {
   padding: 1rem;
   margin: 2rem;
   border-radius: 1rem;
-  background-color: #0b162c;
-  box-shadow: 0px 0px 15px rgba(11, 22, 44, 0.0549019608);
+  background-color: #0f234d;
+  filter: drop-shadow(0px 0px 30px rgba(11, 22, 44, 0.0666666667));
 }
 .edu-list-item img {
   width: 1.15rem;
@@ -534,16 +536,20 @@ footer {
   color: white;
   font-size: 0.8rem;
   font-weight: 600;
-  background-color: #0b162c;
-  box-shadow: drop-shadow(0px 0px 30px rgba(11, 22, 44, 0.0666666667));
+  background-color: #0f234d;
+  filter: drop-shadow(0px 0px 30px rgba(11, 22, 44, 0.0666666667));
   border-radius: 0.85rem;
   padding: 1rem;
   border: 2px solid transparent;
+  resize: none;
 }
 .contact-list-input-field:hover,
 .contact-list-input-field :focus {
   outline: none;
   border-color: #0971f0;
+}
+.contact-list-input-field::-webkit-scrollbar {
+  width: 0px;
 }
 .contact-list-send {
   display: flex;
