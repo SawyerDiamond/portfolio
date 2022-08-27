@@ -89,6 +89,21 @@
       display: none;
     }
   }
+  .projects {
+    &-list {
+      grid-template-columns: 100%;
+      grid-template-rows: repeat(8, 20%);
+      gap: 2vw;
+      grid-template-areas:
+        "."
+        "."
+        "."
+        "."
+        "."
+        "."
+        ".";
+    }
+  }
 }
 
 @media only screen and (max-width: 850px) {
