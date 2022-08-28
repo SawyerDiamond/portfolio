@@ -392,31 +392,22 @@ footer {
   height: auto;
   padding-right: 1rem;
 }
-.projects-item-large {
-  z-index: 2;
-  filter: drop-shadow(0px 0px 10px rgba(11, 22, 44, 0.0549019608));
-  grid-area: large;
-}
-.projects-item-large img {
-  border-radius: 12%/24%;
-  width: 42.8vw;
-}
-.projects-item:not(.projects-item-large) {
+.projects-item {
   z-index: 2;
   filter: drop-shadow(0px 0px 10px rgba(11, 22, 44, 0.0549019608));
 }
-.projects-item:not(.projects-item-large) img {
-  width: 20vw;
-  height: 20vw;
+.projects-item img {
+  width: 26rem;
+  height: 26rem;
   border-radius: 22%;
 }
-.projects-item:not(.projects-item-large):hover {
+.projects-item:hover {
   background-color: #0f234d;
-  width: 20vw;
-  height: 20vw;
+  width: 26rem;
+  height: 26rem;
   border-radius: 22%;
 }
-.projects-item:not(.projects-item-large):hover img {
+.projects-item:hover img {
   transition: ease-in 0.25s;
   opacity: 0;
 }
@@ -427,7 +418,7 @@ footer {
   grid-template-columns: repeat(3, 33%);
   grid-template-rows: repeat(3, 33%);
   gap: 2vw;
-  grid-template-areas: ". . ." ". large large" ". . .";
+  grid-template-areas: ". . ." ". . ." ". . .";
   z-index: 1;
 }
 
@@ -578,8 +569,22 @@ footer {
     margin-top: 14rem;
   }
   .contact-list-input {
-    margin-left: 28vw;
-    margin-right: 28vw;
+    margin-left: 22vw;
+    margin-right: 22vw;
+  }
+  .contact-list-send {
+    margin-left: 22vw;
+    margin-right: 22vw;
+  }
+  .projects {
+    margin-top: 8rem;
+  }
+  .projects-list {
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(4, 25%);
+    margin-top: 10rem;
+    gap: 4vw;
+    grid-template-areas: ". ." ". ." ". ." ". .";
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -589,6 +594,12 @@ footer {
   }
   .nav-container-center-items h3 {
     display: none;
+  }
+  .nav-container-center-items img {
+    margin-right: 0;
+  }
+  .nav-container-right-items {
+    margin-right: 0;
   }
   .hero-social_list li {
     margin: 1rem;
@@ -605,8 +616,18 @@ footer {
   .skills-list {
     grid-template-columns: 16rem 16rem;
   }
+}
+@media only screen and (max-width: 1100px) {
   .projects {
     margin-top: 8rem;
+  }
+  .projects-item img {
+    width: 20rem;
+    height: 20rem;
+  }
+  .projects-item:hover {
+    width: 20rem;
+    height: 20rem;
   }
 }
 @media only screen and (max-width: 1000px) {
@@ -636,12 +657,11 @@ footer {
     margin-left: 1rem;
   }
   .nav-container-right-items {
-    padding-right: 0px;
-    margin-right: 0;
-    border-radius: 0.8rem;
+    border-radius: 1rem;
   }
   .nav-container-right-items img {
     padding: 1rem;
+    padding-right: 0;
   }
   .nav-container-right h3 {
     display: none;
@@ -649,45 +669,40 @@ footer {
   .nav h3 {
     display: none;
   }
-  .projects-list {
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(8, 20%);
-    gap: 2vw;
-    grid-template-areas: "." "." "." "." "." "." ".";
-  }
 }
 @media only screen and (max-width: 850px) {
-  .responsive-menu {
-    display: block;
+  .nav-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
   }
   .nav-container-left {
     display: none;
   }
-  .nav-container-right {
-    padding: 1rem;
-    border-radius: 0.5rem;
-  }
-  .nav-container-right img {
-    width: 16px;
-    padding: 0.5rem;
-    border-radius: 0.25rem;
-  }
-  .skills {
-    margin-top: 4rem;
-  }
-  .skills-list {
-    gap: 40px;
-  }
 }
+.skills {
+  margin-top: 4rem;
+}
+.skills-list {
+  gap: 40px;
+}
+
+.projects {
+  margin-top: 8rem;
+}
+.projects-item img {
+  width: 17rem;
+  height: 17rem;
+}
+.projects-item:hover {
+  width: 17rem;
+  height: 17rem;
+}
+
 @media only screen and (max-width: 650px) {
   h1 {
-    font-size: 4.5rem;
-  }
-  .responsive_phone {
-    display: block;
-  }
-  .responsive_desktop {
-    display: none;
+    font-size: 4rem;
   }
   .skills {
     margin-top: 4rem;
@@ -705,21 +720,33 @@ footer {
     position: relative;
     width: 100%;
     display: flex;
-    justify-content: space-between;
-  }
-  .nav-container-center:nth-child(5) {
-    margin: 0;
+    justify-content: space-around;
   }
   .skills-header-img {
-    width: 3.4rem;
+    width: 3.2rem;
   }
   .projects-header-img {
-    width: 3.6rem;
+    width: 3.2rem;
+  }
+  .projects-list {
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(8, 12.5%);
+    margin-top: 10rem;
+    gap: 4vw;
+    grid-template-areas: "." "." "." "." "." "." "." ".";
   }
   .edu-header-img {
-    width: 3.8rem;
+    width: 3.2rem;
   }
   .contact-header-img {
-    width: 3.8rem;
+    width: 3.2rem;
+  }
+  .contact-list-input {
+    margin-left: 16vw;
+    margin-right: 16vw;
+  }
+  .contact-list-send {
+    margin-left: 16vw;
+    margin-right: 16vw;
   }
 }

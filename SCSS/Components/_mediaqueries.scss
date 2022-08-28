@@ -5,9 +5,27 @@
   .contact {
     &-list {
       &-input {
-        margin-left: 28vw;
-        margin-right: 28vw;
+        margin-left: 22vw;
+        margin-right: 22vw;
       }
+      &-send {
+        margin-left: 22vw;
+        margin-right: 22vw;
+      }
+    }
+  }
+  .projects {
+    margin-top: 8rem;
+    &-list {
+      grid-template-columns: repeat(2, 50%);
+      grid-template-rows: repeat(4, 25%);
+      margin-top: 10rem;
+      gap: 4vw;
+      grid-template-areas:
+        ". ."
+        ". ."
+        ". ."
+        ". .";
     }
   }
 }
@@ -22,6 +40,14 @@
           h3 {
             display: none;
           }
+          img {
+            margin-right: 0;
+          }
+        }
+      }
+      &-right {
+        &-items {
+          margin-right: 0;
         }
       }
     }
@@ -41,8 +67,20 @@
       grid-template-columns: 16rem 16rem;
     }
   }
+}
+@media only screen and (max-width: 1100px) {
   .projects {
     margin-top: 8rem;
+    &-item {
+      img {
+        width: 20rem;
+        height: 20rem;
+      }
+      &:hover {
+        width: 20rem;
+        height: 20rem;
+      }
+    }
   }
 }
 @media only screen and (max-width: 1000px) {
@@ -72,11 +110,10 @@
       }
       &-right {
         &-items {
-          padding-right: 0px;
-          margin-right: 0;
-          border-radius: 0.8rem;
+          border-radius: 1rem;
           img {
             padding: 1rem;
+            padding-right: 0;
           }
         }
 
@@ -89,61 +126,50 @@
       display: none;
     }
   }
-  .projects {
-    &-list {
-      grid-template-columns: 100%;
-      grid-template-rows: repeat(8, 20%);
-      gap: 2vw;
-      grid-template-areas:
-        "."
-        "."
-        "."
-        "."
-        "."
-        "."
-        ".";
-    }
-  }
 }
 
 @media only screen and (max-width: 850px) {
-  .responsive-menu {
-    display: block;
-  }
   .nav {
     &-container {
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
       &-left {
         display: none;
       }
+      &-center {
+      }
       &-right {
-        padding: 1rem;
-        border-radius: 0.5rem;
-        img {
-          width: 16px;
-          padding: 0.5rem;
-          border-radius: 0.25rem;
-        }
       }
     }
   }
-  .skills {
-    margin-top: 4rem;
-    &-list {
-      gap: 40px;
+}
+.skills {
+  margin-top: 4rem;
+  &-list {
+    gap: 40px;
+  }
+}
+.projects {
+  margin-top: 8rem;
+  &-item {
+    img {
+      width: 17rem;
+      height: 17rem;
+    }
+    &:hover {
+      width: 17rem;
+      height: 17rem;
     }
   }
 }
 
 @media only screen and (max-width: 650px) {
   h1 {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
-  .responsive_phone {
-    display: block;
-  }
-  .responsive_desktop {
-    display: none;
-  }
+
   .skills {
     margin-top: 4rem;
     &-list {
@@ -157,41 +183,63 @@
       display: flex;
       justify-content: center;
       &-center {
-        &:nth-child(5) {
-          margin: 0;
-        }
         position: relative;
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
       }
     }
   }
   .skills {
     &-header {
       &-img {
-        width: 3.4rem;
+        width: 3.2rem;
       }
     }
   }
   .projects {
     &-header {
       &-img {
-        width: 3.6rem;
+        width: 3.2rem;
       }
+    }
+    &-list {
+      grid-template-columns: repeat(1, 100%);
+      grid-template-rows: repeat(8, 12.5%);
+      margin-top: 10rem;
+      gap: 4vw;
+      grid-template-areas:
+        "."
+        "."
+        "."
+        "."
+        "."
+        "."
+        "."
+        ".";
     }
   }
   .edu {
     &-header {
       &-img {
-        width: 3.8rem;
+        width: 3.2rem;
       }
     }
   }
   .contact {
     &-header {
       &-img {
-        width: 3.8rem;
+        width: 3.2rem;
+      }
+    }
+    &-list {
+      &-input {
+        margin-left: 16vw;
+        margin-right: 16vw;
+      }
+      &-send {
+        margin-left: 16vw;
+        margin-right: 16vw;
       }
     }
   }

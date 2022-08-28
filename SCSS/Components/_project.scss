@@ -397,36 +397,24 @@ footer {
     }
   }
   &-item {
-    &-large {
-      z-index: 2;
-      filter: $navy-shadow;
-      img {
-        border-radius: 12%/24%;
-        width: 42.8vw;
-      }
-      grid-area: large;
+    z-index: 2;
+    filter: $navy-shadow;
+    img {
+      width: 26rem;
+      height: 26rem;
+      border-radius: 22%;
     }
-    &:not(.projects-item-large) {
-      z-index: 2;
-      filter: $navy-shadow;
+    &:hover {
+      background-color: $navy-secondary;
+      width: 26rem;
+      height: 26rem;
+      border-radius: 22%;
       img {
-        width: 20vw;
-        height: 20vw;
-        border-radius: 22%;
-      }
-      &:hover {
-        background-color: $navy-secondary;
-        width: 20vw;
-        height: 20vw;
-        border-radius: 22%;
-        img {
-          transition: ease-in 0.25s;
-          opacity: 0;
-        }
+        transition: ease-in 0.25s;
+        opacity: 0;
       }
     }
   }
-
   &-list {
     display: grid;
     place-content: center;
@@ -436,7 +424,7 @@ footer {
     gap: 2vw;
     grid-template-areas:
       ". . ."
-      ". large large"
+      ". . ."
       ". . .";
 
     z-index: 1;
