@@ -1,4 +1,20 @@
+@media only screen and (max-width: 1600px) {
+  .hero {
+    &-container {
+      &-text {
+        line-height: 0.92;
+      }
+    }
+  }
+}
 @media only screen and (max-width: 1400px) {
+  .hero {
+    &-container {
+      &-text {
+        margin-bottom: 1rem;
+      }
+    }
+  }
   .projects {
     margin-top: 14rem;
   }
@@ -45,10 +61,12 @@
           }
         }
       }
-      &-right {
-        &-items {
-          margin-right: 0;
-        }
+    }
+  }
+  .hero {
+    &-container {
+      &-text {
+        margin-bottom: 1.5rem;
       }
     }
   }
@@ -110,6 +128,7 @@
       }
       &-right {
         &-items {
+          margin-right: 0;
           border-radius: 1rem;
           img {
             padding: 1rem;
@@ -141,6 +160,11 @@
       &-center {
       }
       &-right {
+        display: flex;
+        justify-content: center;
+        img {
+          padding: 0.6rem;
+        }
       }
     }
   }
