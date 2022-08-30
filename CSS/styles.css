@@ -182,12 +182,12 @@ footer {
   flex-direction: row;
   align-items: center;
   background-color: #0b162c;
-  padding: 0.8rem;
+  padding: 0.7rem;
   padding-right: 2rem;
   border-radius: 1.2rem;
 }
 .nav-container-left-logo {
-  width: 2.4rem;
+  width: 2.6rem;
   height: auto;
   border-radius: 0.8rem;
   margin-left: 1.2rem;
@@ -312,7 +312,6 @@ footer {
   border-radius: 25%;
   border-style: solid;
   border-width: 0.4vmin;
-  border-color: #f8fbff;
   box-shadow: 0px 0px 15px rgba(248, 251, 255, 0.2666666667);
   z-index: 1;
 }
@@ -676,10 +675,13 @@ footer {
     padding-top: 0;
     padding-bottom: 0;
     padding-left: 0;
+    padding-right: 0;
     border-radius: 0.9rem;
   }
+  .nav-container-left h2 {
+    display: none;
+  }
   .nav-container-left-logo {
-    border-radius: inherit;
     margin-left: 0;
     margin-right: 0;
     width: 3rem;
@@ -701,24 +703,6 @@ footer {
   }
   .nav h3 {
     display: none;
-  }
-}
-@media only screen and (max-width: 850px) {
-  .nav-container {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-  }
-  .nav-container-left {
-    display: none;
-  }
-  .nav-container-right {
-    display: flex;
-    justify-content: center;
-  }
-  .nav-container-right img {
-    padding: 0.6rem;
   }
 }
 .skills {
@@ -749,18 +733,6 @@ footer {
   }
   .skills-list {
     grid-template-columns: 16rem;
-  }
-  .nav-container {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  .nav-container-center {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
   }
   .skills-header-img {
     width: 3.2rem;

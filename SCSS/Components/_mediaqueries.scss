@@ -109,14 +109,16 @@
       height: 3rem;
       display: flex;
       justify-content: space-between;
-
       &-left {
+        h2 {
+          display: none;
+        }
         padding-top: 0;
         padding-bottom: 0;
         padding-left: 0;
+        padding-right: 0;
         border-radius: 0.9rem;
         &-logo {
-          border-radius: inherit;
           margin-left: 0;
           margin-right: 0;
           width: 3rem;
@@ -148,26 +150,6 @@
 }
 
 @media only screen and (max-width: 850px) {
-  .nav {
-    &-container {
-      position: relative;
-      width: 100%;
-      display: flex;
-      justify-content: space-around;
-      &-left {
-        display: none;
-      }
-      &-center {
-      }
-      &-right {
-        display: flex;
-        justify-content: center;
-        img {
-          padding: 0.6rem;
-        }
-      }
-    }
-  }
 }
 .skills {
   margin-top: 4rem;
@@ -198,20 +180,6 @@
     margin-top: 4rem;
     &-list {
       grid-template-columns: 16rem;
-    }
-  }
-  .nav {
-    &-container {
-      position: relative;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      &-center {
-        position: relative;
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-      }
     }
   }
   .skills {
