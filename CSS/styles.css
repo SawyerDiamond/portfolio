@@ -265,6 +265,7 @@ footer {
 }
 .hero-container-text {
   line-height: 1;
+  font-weight: 900;
 }
 .hero-container-text-1 {
   background: linear-gradient(67.93deg, #138ef0 23.56%, #0971f0 79.49%);
