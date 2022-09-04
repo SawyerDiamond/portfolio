@@ -46,7 +46,7 @@
 }
 @font-face {
   font-family: "Gilroy";
-  src: url(fonts/Jeko-Extra-Bold.ttf);
+  src: url(Fonts/Jeko-Extra-Bold.ttf);
   font-weight: 900;
   font-style: normal;
 }
@@ -589,12 +589,12 @@ footer {
 
 @media only screen and (max-width: 1600px) {
   .hero-container-text {
-    line-height: 0.92;
+    line-height: 0.9;
   }
 }
 @media only screen and (max-width: 1400px) {
   .hero-container-text {
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
   }
   .projects {
     margin-top: 14rem;
@@ -659,6 +659,18 @@ footer {
   .projects-item:hover {
     width: 20rem;
     height: 20rem;
+  }
+  .hero-container-text {
+    line-height: 0.95;
+  }
+  .hero-container-text-1 {
+    font-size: 5.5vw;
+  }
+  .hero-container-text-2 {
+    font-size: 5.5vw;
+  }
+  .hero-container-text-3 {
+    font-size: 5.5vw;
   }
 }
 @media only screen and (max-width: 1000px) {

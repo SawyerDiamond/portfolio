@@ -2,7 +2,7 @@
   .hero {
     &-container {
       &-text {
-        line-height: 0.92;
+        line-height: 0.9;
       }
     }
   }
@@ -11,7 +11,7 @@
   .hero {
     &-container {
       &-text {
-        margin-bottom: 1rem;
+        margin-bottom: 0.75rem;
       }
     }
   }
@@ -97,6 +97,22 @@
       &:hover {
         width: 20rem;
         height: 20rem;
+      }
+    }
+  }
+  .hero {
+    &-container {
+      &-text {
+        line-height: 0.95;
+        &-1 {
+          font-size: 5.5vw;
+        }
+        &-2 {
+          font-size: 5.5vw;
+        }
+        &-3 {
+          font-size: 5.5vw;
+        }
       }
     }
   }
