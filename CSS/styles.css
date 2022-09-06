@@ -366,6 +366,7 @@ footer {
 .skills-header-img {
   width: 4rem;
   height: auto;
+  padding-right: 0;
 }
 .skills-container {
   width: 100%;
@@ -717,28 +718,31 @@ footer {
     display: none;
   }
 }
-.skills {
-  margin-top: 4rem;
+@media only screen and (max-width: 850px) {
+  .nav-container-left {
+    display: none;
+  }
+  .skills {
+    margin-top: 4rem;
+  }
+  .skills-list {
+    gap: 40px;
+  }
+  .projects {
+    margin-top: 8rem;
+  }
+  .projects-item img {
+    width: 17rem;
+    height: 17rem;
+  }
+  .projects-item:hover {
+    width: 17rem;
+    height: 17rem;
+  }
 }
-.skills-list {
-  gap: 40px;
-}
-
-.projects {
-  margin-top: 8rem;
-}
-.projects-item img {
-  width: 17rem;
-  height: 17rem;
-}
-.projects-item:hover {
-  width: 17rem;
-  height: 17rem;
-}
-
 @media only screen and (max-width: 650px) {
   h1 {
-    font-size: 4rem;
+    font-size: 3.2rem;
   }
   .skills {
     margin-top: 4rem;
@@ -747,10 +751,11 @@ footer {
     grid-template-columns: 16rem;
   }
   .skills-header-img {
-    width: 3.2rem;
+    width: 2.75rem;
   }
   .projects-header-img {
-    width: 3.2rem;
+    width: 2.75rem;
+    padding-right: 0.5rem;
   }
   .projects-list {
     grid-template-columns: repeat(1, 100%);
@@ -760,10 +765,12 @@ footer {
     grid-template-areas: "." "." "." "." "." "." "." ".";
   }
   .edu-header-img {
-    width: 3.2rem;
+    width: 2.75rem;
+    padding-right: 0.5rem;
   }
   .contact-header-img {
-    width: 3.2rem;
+    width: 2.75rem;
+    padding-right: 0.5rem;
   }
   .contact-list-input {
     margin-left: 16vw;
