@@ -1,3 +1,4 @@
+@use "../config/_variables" as *;
 @media only screen and (max-width: 1600px) {
   .hero {
     &-container {
@@ -171,6 +172,9 @@
       &-left {
         display: none;
       }
+      &-center {
+        margin-left: 16vw;
+      }
       &-right {
         &-items {
           img {
@@ -179,6 +183,7 @@
       }
     }
   }
+
   .skills {
     margin-top: 4rem;
     &-list {
@@ -204,7 +209,45 @@
   h1 {
     font-size: 3.2rem;
   }
+  .waves {
+    display: none;
+  }
+  .wavesm {
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+  }
+  .hero {
+    &-container {
+      &-text {
+        &-1 {
+          background: linear-gradient(67.93deg, #fcc00a 23.56%, #f7991d 79.49%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          text-fill-color: transparent;
 
+          font-size: 10vw;
+        }
+        &-2 {
+          font-size: 10vw;
+        }
+        &-3 {
+          background: linear-gradient(
+            67.93deg,
+            $light-blue 23.56%,
+            $dark-blue 79.49%
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          text-fill-color: transparent;
+          font-size: 10vw;
+        }
+      }
+    }
+  }
   .skills {
     margin-top: 4rem;
     &-list {
