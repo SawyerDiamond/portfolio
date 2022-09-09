@@ -255,6 +255,15 @@ footer {
   position: relative;
   display: block;
   white-space: nowrap;
+  &-logo {
+    width: 6rem;
+    height: auto;
+    border-radius: $hero-radius;
+    border-style: solid;
+    border-width: 0.16rem;
+    box-shadow: $white-shadow;
+    z-index: 1;
+  }
   &-container {
     display: flex;
     flex-direction: row;
@@ -312,18 +321,39 @@ footer {
       flex-direction: row;
       justify-content: end;
       align-items: center;
+      &-social {
+        li {
+          img {
+            width: 1.6rem;
+            height: 1.6rem;
+            display: grid;
+            place-content: center;
+          }
+          margin: 2rem;
+          filter: $navy-shadow;
+          background-color: $navy-secondary;
+          border-radius: $hero-radius;
+          padding: 0.5rem;
+
+          &:hover {
+            &:nth-child(1) {
+              background-color: $dark-blue;
+              box-shadow: $blue-shadow;
+            }
+            &:nth-child(2) {
+              background-color: $dark-gold;
+              box-shadow: $gold-shadow;
+            }
+            &:nth-child(3) {
+              background-color: $light-blue;
+              box-shadow: $blue-shadow;
+            }
+            transition: all 1000ms ease;
+          }
+        }
+      }
     }
   }
-}
-
-.hero-logo {
-  max-width: 28%;
-  height: 28%;
-  border-radius: $hero-radius;
-  border-style: solid;
-  border-width: 0.4vmin;
-  box-shadow: $white-shadow;
-  z-index: 1;
 }
 
 .waves {
@@ -333,37 +363,6 @@ footer {
 }
 .wavesm {
   display: none;
-}
-
-.hero-social_list li {
-  img {
-    width: 1.6rem;
-    height: 1.6rem;
-    display: grid;
-    place-content: center;
-  }
-
-  margin: 2rem;
-  filter: $navy-shadow;
-  background-color: $navy-secondary;
-  border-radius: $hero-radius;
-  padding: 0.5rem;
-}
-
-.hero-social_list li:hover {
-  &:nth-child(1) {
-    background-color: $dark-blue;
-    box-shadow: $blue-shadow;
-  }
-  &:nth-child(2) {
-    background-color: $dark-gold;
-    box-shadow: $gold-shadow;
-  }
-  &:nth-child(3) {
-    background-color: $light-blue;
-    box-shadow: $blue-shadow;
-  }
-  transition: all 1000ms ease;
 }
 
 /*--<SKILLS SECTION>--*/
