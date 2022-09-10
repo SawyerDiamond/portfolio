@@ -252,22 +252,22 @@ footer {
 /*--<HERO>--*/
 
 .hero {
-  position: relative;
   display: block;
+  position: relative;
   white-space: nowrap;
   &-logo {
-    width: 6rem;
+    max-width: 28%;
     height: auto;
     border-radius: $hero-radius;
     border-style: solid;
-    border-width: 0.16rem;
+    border-width: 0.25vw;
     box-shadow: $white-shadow;
     z-index: 1;
   }
   &-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     margin-left: 5%;
     padding-left: 5%;
@@ -287,6 +287,9 @@ footer {
         text-fill-color: transparent;
         font-weight: 900;
         font-size: 5vw;
+        &-hand {
+          display: none;
+        }
       }
       &-2 {
         background: linear-gradient(31.33deg, #f2d253 0%, #ed994f 100%);
@@ -324,8 +327,8 @@ footer {
       &-social {
         li {
           img {
-            width: 1.6rem;
-            height: 1.6rem;
+            width: 1vw;
+            height: 1vw;
             display: grid;
             place-content: center;
           }
@@ -362,6 +365,9 @@ footer {
   z-index: -1;
 }
 .wavesm {
+  display: none;
+}
+.wavesapp {
   display: none;
 }
 
