@@ -67,7 +67,52 @@
   .hero {
     &-container {
       &-text {
-        margin-bottom: 1.5rem;
+        margin-bottom: 2.5rem;
+      }
+      &-right {
+        margin-bottom: 3vh;
+        padding-right: 5%;
+        &-social {
+          display: none;
+        }
+      }
+      &-social {
+        &-m {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          background-color: $navy-secondary;
+          border-radius: 1rem;
+          width: 16rem;
+          li {
+            img {
+              width: 1.2rem;
+              height: 1.2rem;
+            }
+            margin-top: 0.75rem;
+            margin-bottom: 0.75rem;
+            border-radius: 0.6rem;
+            background: linear-gradient(70deg, $dark-blue 25%, $light-blue 80%);
+            padding: 0.5rem;
+            padding-bottom: 0.25rem;
+
+            &:hover {
+              &:nth-child(1) {
+                background-color: $dark-blue;
+                box-shadow: $blue-shadow;
+              }
+              &:nth-child(2) {
+                background-color: $dark-gold;
+                box-shadow: $gold-shadow;
+              }
+              &:nth-child(3) {
+                background-color: $light-blue;
+                box-shadow: $blue-shadow;
+              }
+              transition: all 1000ms ease;
+            }
+          }
+        }
       }
     }
   }
@@ -205,8 +250,6 @@
     &-container {
       display: flex;
       justify-items: center;
-      &-right {
-      }
     }
   }
   .hero {
@@ -255,7 +298,7 @@
         }
       }
       &-right {
-        margin-bottom: 2vh;
+        margin-bottom: 3vh;
         &-social {
           display: flex;
           flex-direction: row;
@@ -368,8 +411,8 @@
         &-1 {
           font-size: 14vw;
           &-hand {
-            display: inline;
-            background: none;
+            display: flex;
+            flex-direction: row;
           }
         }
         &-2 {
@@ -385,26 +428,6 @@
         &-5 {
           font-size: 7vw;
           line-height: 1.15;
-        }
-      }
-      &-right {
-        &-social {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-around;
-          background-color: $navy-secondary;
-          border-radius: 1rem;
-          li {
-            img {
-              width: 1.2rem;
-              height: 1.2rem;
-            }
-            margin-top: 0.75rem;
-            margin-bottom: 0.75rem;
-            margin-left: 1.6rem;
-            margin-right: 1.6rem;
-            border-radius: 0.6rem;
-          }
         }
       }
     }

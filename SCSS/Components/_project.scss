@@ -113,6 +113,9 @@ p {
   font-family: "Gilroy", "Segoe UI";
   font-weight: 600;
 }
+footer {
+  font-family: "Gilroy", "Segoe UI";
+}
 
 a {
   text-decoration: none;
@@ -327,8 +330,8 @@ footer {
       &-social {
         li {
           img {
-            width: 1vw;
-            height: 1vw;
+            width: 1.2vw;
+            height: 1.2vw;
             display: grid;
             place-content: center;
           }
@@ -354,6 +357,11 @@ footer {
             transition: all 1000ms ease;
           }
         }
+      }
+    }
+    &-social {
+      &-m {
+        display: none;
       }
     }
   }

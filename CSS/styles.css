@@ -112,6 +112,10 @@ p {
   font-weight: 600;
 }
 
+footer {
+  font-family: "Gilroy", "Segoe UI";
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -325,8 +329,8 @@ footer {
   padding: 0.5rem;
 }
 .hero-container-right-social li img {
-  width: 1vw;
-  height: 1vw;
+  width: 1.2vw;
+  height: 1.2vw;
   display: grid;
   place-content: center;
 }
@@ -344,6 +348,9 @@ footer {
 .hero-container-right-social li:hover:nth-child(3) {
   background-color: #138ef0;
   box-shadow: 0px 0px 15px rgba(16, 95, 214, 0.3764705882);
+}
+.hero-container-social-m {
+  display: none;
 }
 
 .waves {
@@ -639,7 +646,49 @@ footer {
     margin-right: 0;
   }
   .hero-container-text {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+  .hero-container-right {
+    margin-bottom: 3vh;
+    padding-right: 5%;
+  }
+  .hero-container-right-social {
+    display: none;
+  }
+  .hero-container-social-m {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #0f234d;
+    border-radius: 1rem;
+    width: 16rem;
+  }
+  .hero-container-social-m li {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    border-radius: 0.6rem;
+    background: linear-gradient(70deg, #0971f0 25%, #138ef0 80%);
+    padding: 0.5rem;
+    padding-bottom: 0.25rem;
+  }
+  .hero-container-social-m li img {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+  .hero-container-social-m li:hover {
+    transition: all 1000ms ease;
+  }
+  .hero-container-social-m li:hover:nth-child(1) {
+    background-color: #0971f0;
+    box-shadow: 0px 0px 15px rgba(16, 95, 214, 0.3764705882);
+  }
+  .hero-container-social-m li:hover:nth-child(2) {
+    background-color: #f7991d;
+    box-shadow: 0px 0px 15px rgba(247, 153, 29, 0.4431372549);
+  }
+  .hero-container-social-m li:hover:nth-child(3) {
+    background-color: #138ef0;
+    box-shadow: 0px 0px 15px rgba(16, 95, 214, 0.3764705882);
   }
   .hero-social_list li {
     margin: 1rem;
@@ -804,7 +853,7 @@ footer {
     line-height: 1.25;
   }
   .hero-container-right {
-    margin-bottom: 2vh;
+    margin-bottom: 3vh;
   }
   .hero-container-right-social {
     display: flex;
@@ -885,8 +934,8 @@ footer {
     font-size: 14vw;
   }
   .hero-container-text-1-hand {
-    display: inline;
-    background: none;
+    display: flex;
+    flex-direction: row;
   }
   .hero-container-text-2 {
     font-size: 14vw;
@@ -901,23 +950,5 @@ footer {
   .hero-container-text-5 {
     font-size: 7vw;
     line-height: 1.15;
-  }
-  .hero-container-right-social {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: #0f234d;
-    border-radius: 1rem;
-  }
-  .hero-container-right-social li {
-    margin-top: 0.75rem;
-    margin-bottom: 0.75rem;
-    margin-left: 1.6rem;
-    margin-right: 1.6rem;
-    border-radius: 0.6rem;
-  }
-  .hero-container-right-social li img {
-    width: 1.2rem;
-    height: 1.2rem;
   }
 }
