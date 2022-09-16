@@ -9,13 +9,6 @@
   }
 }
 @media only screen and (max-width: 1400px) {
-  .hero {
-    &-container {
-      &-text {
-        margin-bottom: 0.75rem;
-      }
-    }
-  }
   .projects {
     margin-top: 14rem;
   }
@@ -68,51 +61,6 @@
     &-container {
       &-text {
         margin-bottom: 2.5rem;
-      }
-      &-right {
-        margin-bottom: 3vh;
-        padding-right: 5%;
-        &-social {
-          display: none;
-        }
-      }
-      &-social {
-        &-m {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-around;
-          background-color: $navy-secondary;
-          border-radius: 1rem;
-          width: 16rem;
-          li {
-            img {
-              width: 1.2rem;
-              height: 1.2rem;
-            }
-            margin-top: 0.75rem;
-            margin-bottom: 0.75rem;
-            border-radius: 0.6rem;
-            background: linear-gradient(70deg, $dark-blue 25%, $light-blue 80%);
-            padding: 0.5rem;
-            padding-bottom: 0.25rem;
-
-            &:hover {
-              &:nth-child(1) {
-                background-color: $dark-blue;
-                box-shadow: $blue-shadow;
-              }
-              &:nth-child(2) {
-                background-color: $dark-gold;
-                box-shadow: $gold-shadow;
-              }
-              &:nth-child(3) {
-                background-color: $light-blue;
-                box-shadow: $blue-shadow;
-              }
-              transition: all 1000ms ease;
-            }
-          }
-        }
       }
     }
   }
@@ -179,7 +127,7 @@
         padding-bottom: 0;
         padding-left: 0;
         padding-right: 0;
-        border-radius: 0.9rem;
+        border-radius: 0.8rem 0.8rem 1.1rem 1.1rem;
         &-logo {
           margin-left: 0;
           margin-right: 0;
@@ -193,7 +141,7 @@
       &-right {
         &-items {
           margin-right: 0;
-          border-radius: 1rem;
+          border-radius: 1.1rem 0.8rem 0.8rem 1.1rem;
           img {
             padding: 1rem;
             padding-right: 0;
@@ -212,31 +160,6 @@
 }
 
 @media only screen and (max-width: 850px) {
-  .skills {
-    margin-top: 4rem;
-    &-list {
-      gap: 40px;
-    }
-  }
-  .projects {
-    margin-top: 8rem;
-    &-item {
-      img {
-        width: 17rem;
-        height: 17rem;
-      }
-      &:hover {
-        width: 17rem;
-        height: 17rem;
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 650px) {
-  h1 {
-    font-size: 3.2rem;
-  }
   .waves {
     display: none;
   }
@@ -245,12 +168,6 @@
     width: 100%;
     height: auto;
     z-index: -1;
-  }
-  .nav {
-    &-container {
-      display: flex;
-      justify-items: center;
-    }
   }
   .hero {
     &-container {
@@ -322,6 +239,37 @@
     }
     &-logo {
       display: none;
+    }
+  }
+  .skills {
+    margin-top: 4rem;
+    &-list {
+      gap: 40px;
+    }
+  }
+  .projects {
+    margin-top: 8rem;
+    &-item {
+      img {
+        width: 17rem;
+        height: 17rem;
+      }
+      &:hover {
+        width: 17rem;
+        height: 17rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  h1 {
+    font-size: 3.2rem;
+  }
+  .nav {
+    &-container {
+      display: flex;
+      justify-items: center;
     }
   }
   .skills {
@@ -408,12 +356,9 @@
   .hero {
     &-container {
       &-text {
+        margin-top: 12rem;
         &-1 {
           font-size: 14vw;
-          &-hand {
-            display: flex;
-            flex-direction: row;
-          }
         }
         &-2 {
           font-size: 14vw;

@@ -253,6 +253,17 @@ footer {
   }
 }
 /*--<HERO>--*/
+@keyframes slideAnimation {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+.slide-in {
+  animation: slideAnimation 1500ms;
+}
 
 .hero {
   display: block;
@@ -290,9 +301,6 @@ footer {
         text-fill-color: transparent;
         font-weight: 900;
         font-size: 5vw;
-        &-hand {
-          display: none;
-        }
       }
       &-2 {
         background: linear-gradient(31.33deg, #f2d253 0%, #ed994f 100%);
@@ -328,40 +336,30 @@ footer {
       justify-content: end;
       align-items: center;
       &-social {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: $navy-secondary;
+        border-radius: 1rem;
+        margin-left: 2vw;
         li {
           img {
-            width: 1.2vw;
-            height: 1.2vw;
-            display: grid;
-            place-content: center;
+            width: 1rem;
+            height: 1rem;
           }
-          margin: 2rem;
-          filter: $navy-shadow;
-          background-color: $navy-secondary;
-          border-radius: $hero-radius;
           padding: 0.5rem;
-
+          padding-bottom: 0.25rem;
+          margin: 0.75rem;
+          margin-bottom: 1rem;
+          margin-top: 1rem;
+          border-radius: 0.6rem;
+          background: linear-gradient(70deg, $dark-blue 25%, $light-blue 80%);
           &:hover {
-            &:nth-child(1) {
-              background-color: $dark-blue;
-              box-shadow: $blue-shadow;
-            }
-            &:nth-child(2) {
-              background-color: $dark-gold;
-              box-shadow: $gold-shadow;
-            }
-            &:nth-child(3) {
-              background-color: $light-blue;
-              box-shadow: $blue-shadow;
-            }
+            background: $dark-gold;
+            box-shadow: $gold-shadow;
             transition: all 1000ms ease;
           }
         }
-      }
-    }
-    &-social {
-      &-m {
-        display: none;
       }
     }
   }
