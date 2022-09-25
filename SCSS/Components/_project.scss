@@ -36,6 +36,7 @@
     url("fonts/Gilroy-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: antialiased;
 }
@@ -48,6 +49,7 @@
     url(Fonts\Gilroy-Bold.ttf) format("truetype");
   font-weight: 800;
   font-style: normal;
+  font-display: swap;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: antialiased;
 }
@@ -56,6 +58,7 @@
   src: url(Fonts/Jeko-Extra-Bold.ttf);
   font-weight: 900;
   font-style: normal;
+  font-display: swap;
 }
 
 /*--<SCROLLBAR>--*/

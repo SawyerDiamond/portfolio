@@ -32,6 +32,7 @@
   src: url("fonts/Gilroy-SemiBold.eot?#iefix") format("embedded-opentype"), url("fonts/Gilroy-SemiBold.woff2") format("woff2"), url("fonts/Gilroy-SemiBold.woff") format("woff"), url("fonts/Gilroy-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: antialiased;
 }
@@ -41,6 +42,7 @@
   src: url(FontsGilroy-Bold.eot?#iefix) format("embedded-opentype"), url("Fonts/Gilroy-Bold.woff2") format("woff2"), url(FontsGilroy-Bold.woff) format("woff"), url(FontsGilroy-Bold.ttf) format("truetype");
   font-weight: 800;
   font-style: normal;
+  font-display: swap;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: antialiased;
 }
@@ -49,6 +51,7 @@
   src: url(Fonts/Jeko-Extra-Bold.ttf);
   font-weight: 900;
   font-style: normal;
+  font-display: swap;
 }
 /*--<SCROLLBAR>--*/
 body::-webkit-scrollbar {
@@ -694,11 +697,11 @@ footer {
   .projects {
     margin-top: 8rem;
   }
-  .projects-item img {
-    width: 20rem;
-    height: 20rem;
+  .projects-item-button {
+    width: 17.5rem;
+    height: 17.5rem;
   }
-  .projects-item:hover {
+  .projects-item img {
     width: 20rem;
     height: 20rem;
   }
@@ -844,11 +847,14 @@ footer {
   .projects {
     margin-top: 8rem;
   }
-  .projects-item img {
-    width: 17rem;
-    height: 17rem;
+  .projects-item h2 {
+    font-size: 22px;
   }
-  .projects-item:hover {
+  .projects-item-button {
+    width: 15rem;
+    height: 15rem;
+  }
+  .projects-item img {
     width: 17rem;
     height: 17rem;
   }

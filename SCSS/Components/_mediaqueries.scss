@@ -84,11 +84,11 @@
   .projects {
     margin-top: 8rem;
     &-item {
-      img {
-        width: 20rem;
-        height: 20rem;
+      &-button {
+        width: 17.5rem;
+        height: 17.5rem;
       }
-      &:hover {
+      img {
         width: 20rem;
         height: 20rem;
       }
@@ -250,11 +250,14 @@
   .projects {
     margin-top: 8rem;
     &-item {
-      img {
-        width: 17rem;
-        height: 17rem;
+      h2 {
+        font-size: 22px;
       }
-      &:hover {
+      &-button {
+        width: 15rem;
+        height: 15rem;
+      }
+      img {
         width: 17rem;
         height: 17rem;
       }

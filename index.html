@@ -58,7 +58,6 @@
     />
     <!--CSS LINK-->
     <link rel="stylesheet" href="CSS/styles.css" />
-    <link rel="preload" as="font" />
     <title>Portfolio</title>
   </head>
 
@@ -70,7 +69,7 @@
           <h2>SAWYER</h2>
         </div>
         <div class="nav-container-center">
-          <a href="" class="nav-container-center-items">
+          <a href="#home-point" class="nav-container-center-items">
             <img src="Icons/home.svg" alt="" />
             <h3>Home</h3>
           </a>
@@ -99,9 +98,9 @@
       </div>
     </nav>
     <section class="hero">
-      <img src="Images\Waves2.webp" class="waves" alt="" />
-      <img src="Images\Waves.webp" class="wavesm" alt="" />
-      <img src="Images\WavesApp.webp" class="wavesapp" alt="" />
+      <img src="Images\Waves2.webp" class="waves" id="home-point" alt="" />
+      <img src="Images\Waves.webp" class="wavesm" id="home-point" alt="" />
+      <img src="Images\WavesApp.webp" class="wavesapp" id="home-point" alt="" />
       <div class="hero-container top-set">
         <div class="hero-container-text slide-in">
           <h1 class="hero-container-text-top">
@@ -126,7 +125,7 @@
               </a>
             </li>
             <li>
-              <a href="https://www.behance.net/sawyerd">
+              <a href="https://www.behance.net/sawyerd" id="skills-point">
                 <img src="Icons/Behance.svg" alt="Behance" />
               </a>
             </li>
@@ -138,7 +137,7 @@
 
   <body>
     <!--<Skills>-->
-    <section class="skills reveal" id="skills-point">
+    <section class="skills reveal">
       <div class="skills-header">
         <img src="Icons/lightning.svg" class="skills-header-img" alt="" />
         <h1>SKILLS</h1>
@@ -207,20 +206,20 @@
         <a class="projects-item">
           <h2>P O R T F O L I O</h2>
           <div class="projects-item-button"></div>
-          <img src="Images\Gradients\PinkIMG.png" alt="Purple-Pink Gradient" />
+          <img src="Images\Gradients\PinkIMG.webp" alt="Purple-Pink Gradient" />
         </a>
         <a class="projects-item">
           <h2>Portfolio</h2>
           <div class="projects-item-button"></div>
-          <img src="Images\Gradients\PurplePinkIMG.png" alt="Avatar" />
+          <img src="Images\Gradients\PurplePinkIMG.webp" alt="Avatar" />
         </a>
         <a class="projects-item">
           <div class="projects-item-button"></div>
-          <img src="Images\Gradients\BlueIMG.png" alt="Avatar" />
+          <img src="Images\Gradients\BlueIMG.webp" alt="Avatar" />
         </a>
         <a class="projects-item">
           <div class="projects-item-button"></div>
-          <img src="Images\Gradients\BlueGreenIMG.png" alt="Avatar" />
+          <img src="Images\Gradients\BlueGreenIMG.webp" alt="Avatar" />
         </a>
         <a class="projects-item">
           <div class="projects-item-button"></div>
@@ -228,15 +227,15 @@
         </a>
         <a class="projects-item">
           <div class="projects-item-button"></div>
-          <img src="Images\Gradients\NavyIMG.png" alt="Avatar" />
+          <img src="Images\Gradients\NavyIMG.webp" alt="Avatar" />
         </a>
         <a class="projects-item">
           <div class="projects-item-button"></div>
-          <img src="Images\Gradients\BeigeRedIMG.png" alt="Avatar" />
+          <img src="Images\Gradients\BeigeRedIMG.webp" alt="Avatar" />
         </a>
         <a class="projects-item">
           <div class="projects-item-button"></div>
-          <img src="Images\Gradients\PinkYellowIMG.png" alt="Avatar" />
+          <img src="Images\Gradients\PinkYellowIMG.webp" alt="Avatar" />
         </a>
       </div>
     </section>
@@ -248,27 +247,27 @@
       </div>
       <div class="edu-list">
         <ul>
-          <a class="edu-list-item">
+          <li class="edu-list-item">
             <div class="edu-list-item-desc">
               <img src="Icons/english.svg" alt="ACT Score" />
               <h3>ACT</h3>
             </div>
             <h3 class="edu-list-item-numb">34</h3>
-          </a>
-          <a class="edu-list-item">
+          </li>
+          <li class="edu-list-item">
             <div class="edu-list-item-desc">
               <img src="Icons/math.svg" alt="Math - 31" />
               <h3>GPA</h3>
             </div>
             <h3 class="edu-list-item-numb">102</h3>
-          </a>
-          <a class="edu-list-item">
+          </li>
+          <li class="edu-list-item">
             <div class="edu-list-item-desc">
               <img src="Icons/aps.svg" alt="Reading - 36" />
               <h3>AP Classes</h3>
             </div>
             <h3 class="edu-list-item-numb">9</h3>
-          </a>
+          </li>
         </ul>
       </div>
     </section>
@@ -289,11 +288,17 @@
             name="name"
             class="contact-list-input-field"
             type="text"
+            aria-label="Input your name."
           />
         </div>
         <div class="contact-list-input">
           <label class="contact-list-input-label">| Email Address</label>
-          <input name="email" class="contact-list-input-field" type="email" />
+          <input
+            name="email"
+            class="contact-list-input-field"
+            type="email"
+            aria-label="Input your email address."
+          />
         </div>
 
         <div class="contact-list-input">
@@ -304,11 +309,12 @@
             class="contact-list-input-field"
             rows="5"
             cols="33"
+            aria-label="Input you message."
           ></textarea>
         </div>
         <button type="submit" class="contact-list-send">
           Send
-          <img src="Icons\Send.svg" />
+          <img src="Icons\Send.svg" alt="" />
         </button>
       </form>
     </section>
