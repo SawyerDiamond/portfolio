@@ -378,6 +378,9 @@ footer {
 }
 
 /*--<SKILLS SECTION>--*/
+.hidden {
+  display: none;
+}
 
 .skills {
   width: 100%;
@@ -442,21 +445,42 @@ footer {
     }
   }
   &-item {
-    z-index: 2;
     filter: $navy-shadow;
+    display: grid;
+    place-items: center;
+    h2 {
+      position: absolute;
+      z-index: 2;
+      padding: 1.5rem;
+      border-radius: 1.5rem;
+      filter: $white-shadow;
+    }
     img {
       width: 26rem;
       height: 26rem;
       border-radius: 22%;
+      z-index: 1;
+      filter: blur(0.75px);
+    }
+    &-button {
+      background: linear-gradient(70deg, $dark-blue 25%, $light-blue 80%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 23rem;
+      height: 23rem;
+      position: absolute;
+      border-radius: 23%;
+      z-index: 0;
     }
     &:hover {
-      background-color: $navy-secondary;
-      width: 26rem;
-      height: 26rem;
       border-radius: 22%;
+      cursor: pointer;
       img {
-        transition: ease-in 0.25s;
-        opacity: 0;
+        transition: ease-in 0.5s;
+        transition: ease-out 0.5s;
+        opacity: 25%;
+        z-index: -1;
       }
     }
   }
