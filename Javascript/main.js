@@ -1,10 +1,14 @@
+"use strict";
+
+//Sticky Navigation
+
 window.onscroll = function () {
   myFunction();
 };
 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-var button = document.getElementById("buttonUp");
+const navbar = document.getElementById("navbar");
+const sticky = navbar.offsetTop;
+const button = document.getElementById("buttonUp");
 
 function myFunction() {
   if (window.pageYOffset >= sticky) {
@@ -13,3 +17,5 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+
+//Modals for Projects

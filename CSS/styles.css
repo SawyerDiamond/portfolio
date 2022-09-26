@@ -142,6 +142,21 @@ footer {
   color: white;
 }
 
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+}
+
 .top-set {
   position: absolute;
   top: 0px;
@@ -459,7 +474,6 @@ footer {
   height: 26rem;
   border-radius: 22%;
   z-index: 1;
-  filter: blur(0.75px);
 }
 .projects-item-button {
   background: linear-gradient(70deg, #0971f0 25%, #138ef0 80%);
@@ -491,6 +505,10 @@ footer {
   gap: 2vw;
   grid-template-areas: ". . ." ". . ." ". . .";
   z-index: 1;
+}
+
+.hidden-modal {
+  display: none;
 }
 
 .edu {
