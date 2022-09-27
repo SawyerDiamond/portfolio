@@ -507,8 +507,23 @@ button {
   z-index: 1;
 }
 
-.hidden-modal {
+.hiddenModal {
   display: none;
+}
+
+.modal-background {
+  position: sticky;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  z-index: 10;
+  width: 70%;
+  background-color: #0b162c;
+  padding: 6rem;
+  border-radius: 3vw;
+  filter: drop-shadow(0px 0px 10px rgba(11, 22, 44, 0.0549019608));
+  box-shadow: 0px 0px 20px 6000px rgba(0, 4, 19, 0.692);
 }
 
 .edu {
