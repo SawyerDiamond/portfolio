@@ -8,6 +8,13 @@
     }
   }
 }
+@media only screen and (max-width: 1600px) {
+  .modal {
+    &-background {
+      width: 80%;
+    }
+  }
+}
 @media only screen and (max-width: 1400px) {
   .projects {
     margin-top: 14rem;
@@ -77,6 +84,28 @@
     margin-top: 4rem;
     &-list {
       grid-template-columns: 16rem 16rem;
+    }
+  }
+  .modal {
+    &-background {
+      width: 80%;
+      top: 27.5%;
+      &-container {
+        &-left {
+          &-title {
+            h1 {
+              font-size: 3.2rem;
+            }
+            img {
+              width: 24px;
+              height: 24px;
+            }
+          }
+          p {
+            font-size: 1.1rem;
+          }
+        }
+      }
     }
   }
 }

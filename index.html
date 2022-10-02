@@ -223,7 +223,7 @@
         </button>
         <button class="projects-item">
           <div class="projects-item-button"></div>
-          <img src="Images\Gradients\OrangePinkIMG.png" alt="Avatar" />
+          <img src="Images\Gradients\OrangePinkIMG.webp" alt="Avatar" />
         </button>
         <button class="projects-item">
           <div class="projects-item-button"></div>
@@ -242,33 +242,56 @@
 
     <!--<Modal>-->
     <section class="modal">
-      <div class="modal-background">
-        <div class="modal-background-left">
-          <h2>Modal Window</h2>
-          <p>Modal Window Text</p>
-        </div>
-        <div class="modal-background-right">
-          <button class="modal-background-right-close"></button>
-          <ul>
-            <li>
-              <a href="https://github.com/SawyerDiamond">
-                <img src="Icons/github-two.svg" alt="GitHub" />
-              </a>
-            </li>
-            <li>
-              <a href="https://dribbble.com/SawyerD/">
-                <img src="Icons/dribbble2.svg" alt="Dribbble" />
-              </a>
-            </li>
-            <li>
-              <a href="https://www.behance.net/sawyerd" id="skills-point">
-                <img src="Icons/Behance.svg" alt="Behance" />
-              </a>
-            </li>
-          </ul>
+      <div class="modal-background hiddenModal">
+        <div class="modal-background-container">
+          <div class="modal-background-container-left">
+            <div class="modal-background-container-left-img">
+              <img
+                src="Images/BG1.webp"
+                alt="Images of Portfolio"
+                class="modal-background-img-1"
+              />
+            </div>
+            <div class="modal-background-container-left-title">
+              <h1>Portfolio</h1>
+              <img src="Icons/html.svg" alt="" />
+              <img src="Icons/css.svg" alt="" />
+              <img src="Icons/sass.svg" alt="" />
+              <img src="Icons/javascript.svg" alt="" />
+            </div>
+
+            <p>
+              Personal portfolio project exhibiting my skills, projects,
+              education, and a contact form.
+            </p>
+          </div>
+          <div class="modal-background-container-right">
+            <button class="modal-background-container-right-close">
+              <img src="Icons/Close.svg" alt="" />
+            </button>
+            <ul>
+              <li>
+                <a href="https://github.com/SawyerDiamond/portfolio">
+                  <img src="Icons/github-two.svg" alt="GitHub" />
+                </a>
+              </li>
+              <li>
+                <a href="https://dribbble.com/SawyerD/">
+                  <img src="Icons/dribbble2.svg" alt="Dribbble" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://sawyerdiamond.github.io/portfolio/"
+                  id="skills-point"
+                >
+                  <img src="Icons/Link.svg" alt="Link to Site" />
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="modal-overlay"></div>
     </section>
 
     <!--<Education>-->
@@ -303,6 +326,8 @@
         </ul>
       </div>
     </section>
+
+    <!--<Contact>-->
     <section class="contact reveal" id="contact-point">
       <div class="contact-header">
         <img src="Icons/Contact.svg" class="contact-header-img" alt="" />

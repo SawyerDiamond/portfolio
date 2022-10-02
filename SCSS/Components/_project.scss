@@ -145,8 +145,6 @@ button {
   border: none;
   margin: 0;
   padding: 0;
-  width: auto;
-  overflow: visible;
   background: transparent;
   color: inherit;
   font: inherit;
@@ -522,21 +520,105 @@ button {
 
 .modal {
   //Filter across the background
-
+  display: flex;
+  justify-content: center;
   &-background {
-    position: sticky;
-    top: auto;
-    bottom: auto;
-    left: auto;
-    right: auto;
-    z-index: 10;
-    width: 70%;
+    position: fixed;
+    top: 15%;
+    z-index: 1;
     background-color: $navy-primary;
-    padding: 6rem;
-    border-radius: 3vw;
+    padding: 3vw;
+    width: 70%;
+    border-radius: 2.5vw;
     filter: $navy-shadow;
+    box-shadow: 0px 0px 20px 6000px rgba(0, 0, 0, 0.6);
+    &-container {
+      display: flex;
+      justify-content: space-between;
+      &-left {
+        p {
+          font-size: 1.3rem;
+        }
+        &-img {
+          img {
+            width: 60vw;
+            border-radius: 2vw;
+            box-shadow: $navie-shadow;
+          }
+        }
+        &-title {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin-top: 1rem;
+          h1 {
+            margin-right: 2rem;
+          }
+          img {
+            width: 30px;
+            height: 30px;
+            margin-left: 0.75rem;
+            margin-right: 0.75rem;
+          }
+        }
+      }
 
-    box-shadow: 0px 0px 20px 6000px rgba(0, 4, 19, 0.692);
+      &-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        &-close {
+          cursor: pointer;
+          width: 40px;
+          height: 40px;
+          img {
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+            border-radius: 1rem;
+            background: linear-gradient(
+              90deg,
+              $dark-gold -25%,
+              $light-gold 110%
+            );
+            &:hover {
+              background: $light-gold;
+              box-shadow: $gold-shadow;
+              transition: all 1000ms ease-in-out;
+            }
+          }
+        }
+        ul {
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          background-color: $navy-secondary;
+          border-radius: 1rem;
+
+          li {
+            img {
+              width: 1.15rem;
+              height: 1.15rem;
+            }
+            padding: 0.5rem;
+            padding-bottom: 0.25rem;
+            margin: 0.75rem;
+            margin-bottom: 1rem;
+
+            border-radius: 0.6rem;
+            background: linear-gradient(70deg, $dark-blue 25%, $light-blue 80%);
+            &:hover {
+              background: $dark-gold;
+              box-shadow: $gold-shadow;
+              transition: all 1000ms ease;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -551,7 +633,7 @@ button {
   &-header {
     display: flex;
     justify-content: center;
-    z-index: 1;
+    z-index: 0;
     &-img {
       width: 4.4rem;
       height: auto;
