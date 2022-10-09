@@ -584,7 +584,6 @@ button {
               $light-gold 110%
             );
             &:hover {
-              background: $light-gold;
               box-shadow: $gold-shadow;
               transition: all 1000ms ease-in-out;
             }
