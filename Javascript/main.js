@@ -17,21 +17,3 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
-
-//Modals for Projects
-
-const modal = document.querySelector(".modal-background");
-const btnCloseModal = document.querySelector(
-  ".modal-background-container-right-close"
-);
-const btnsOpenModal = document.querySelectorAll(".projects-item");
-
-for (let i = 0; i < btnsOpenModal.length; i++)
-  btnsOpenModal[i].addEventListener("click", function () {
-    console.log("Button Click");
-    modal.classList.remove("hiddenModal");
-  });
-
-btnCloseModal.addEventListener("click", function () {
-  modal.classList.add("hiddenModal");
-});
