@@ -572,7 +572,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-color: #0f234d;
+  background-color: #0b162c;
   border-radius: 1rem;
 }
 .modal-background-container-right ul li {
