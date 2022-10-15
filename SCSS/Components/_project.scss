@@ -513,25 +513,18 @@ button {
     z-index: 1;
   }
 }
-//Modals for the Projects Section
-.hiddenModal {
-  display: none;
-}
 
 .modal {
-  //Filter across the background
   display: flex;
   justify-content: center;
   &-background {
-    position: fixed;
-    top: 15%;
     z-index: 1;
-    background-color: $navy-primary;
     padding: 3vw;
-    width: 70%;
+    margin-top: 8rem;
+    width: 80%;
     border-radius: 2.5vw;
+    background-color: $navy-secondary;
     filter: $navy-shadow;
-    box-shadow: 0px 0px 20px 6000px rgba(0, 0, 0, 0.6);
     &-container {
       display: flex;
       justify-content: space-between;

@@ -505,24 +505,18 @@ button {
   z-index: 1;
 }
 
-.hiddenModal {
-  display: none;
-}
-
 .modal {
   display: flex;
   justify-content: center;
 }
 .modal-background {
-  position: fixed;
-  top: 15%;
   z-index: 1;
-  background-color: #0b162c;
   padding: 3vw;
-  width: 70%;
+  margin-top: 8rem;
+  width: 80%;
   border-radius: 2.5vw;
+  background-color: #0f234d;
   filter: drop-shadow(0px 0px 10px rgba(11, 22, 44, 0.0549019608));
-  box-shadow: 0px 0px 20px 6000px rgba(0, 0, 0, 0.6);
 }
 .modal-background-container {
   display: flex;
