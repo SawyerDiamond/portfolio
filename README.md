@@ -4,7 +4,7 @@
 
 <p align="center">
   <b>Built With
-    <img src="/Icons/javascript.svg" alt="Javascript" />
+    <img src="/Icons/javascript.svg" width ="20" length ="20" alt="Javascript" />
     <img src="/Icons/scss.svg" alt="SCSS" />
   </b>
   
