@@ -1,7 +1,7 @@
-# [Portfolio](https://sawyerdiamond.github.io/portfolio/)
-> **🖼️ Showcase of my skills, and my future work.**
+# [⚡Portfolio](https://sawyerdiamond.github.io/portfolio/)
+> **🖼️ Showcase of my skills, and future work.**
 
 
 <p align="center">
-  <img src="/Images/Preview.png" alt="Portfolio" />
+  <img src="/Images/Gradients/PinkIMG.webp" alt="Portfolio" />
 </p>
