@@ -512,6 +512,8 @@ button {
 .modal-background {
   z-index: 1;
   padding: 3vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
   margin-top: 8rem;
   width: 80%;
   border-radius: 2.5vw;
@@ -524,6 +526,9 @@ button {
 }
 .modal-background-container-left p {
   font-size: 1.3rem;
+  line-height: 1.9rem;
+  width: 60vw;
+  font-weight: 500;
 }
 .modal-background-container-left-img img {
   width: 60vw;
@@ -553,8 +558,6 @@ button {
 }
 .modal-background-container-right-close {
   cursor: pointer;
-  width: 40px;
-  height: 40px;
 }
 .modal-background-container-right-close img {
   display: flex;
@@ -868,7 +871,7 @@ button {
   }
   .nav-container-right-items {
     margin-right: 0;
-    border-radius: 1.1rem 0.8rem 0.8rem 1.1rem;
+    border-radius: 0.8rem 0.8rem 0.8rem 0.8rem;
   }
   .nav-container-right-items img {
     padding: 1rem;
@@ -879,6 +882,29 @@ button {
   }
   .nav h3 {
     display: none;
+  }
+  .modal-background-container {
+    flex-direction: column-reverse;
+  }
+  .modal-background-container-left p {
+    width: 80vw;
+  }
+  .modal-background-container-left-img img {
+    width: 100vw;
+  }
+  .modal-background-container-right {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+  }
+  .modal-background-container-right ul {
+    flex-direction: row;
+  }
+  .modal-background-container-right ul li {
+    margin-bottom: 0.75rem;
+    margin-left: 1.05rem;
+    margin-right: 1.05rem;
   }
 }
 @media only screen and (max-width: 850px) {
@@ -1021,6 +1047,21 @@ button {
   .contact-list-send {
     margin-left: 16vw;
     margin-right: 16vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .modal-background-container-left-title {
+    flex-direction: column;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+  }
+  .modal-background-container-left-title img {
+    margin-left: 0.25rem;
+  }
+  .modal-background-container-left-title-ico {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
   }
 }
 @media only screen and (max-width: 428px) {
