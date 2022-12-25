@@ -401,18 +401,29 @@
 }
 
 @media only screen and (max-width: 500px) {
+  .nav {
+    margin: 0;
+    padding: 0;
+    height: 0;
+  }
   .modal {
-    &-background-container-left-title {
-      flex-direction: column;
-      align-items: baseline;
-      margin-bottom: 0.5rem;
-      img {
-        margin-left: 0.25rem;
-      }
-      &-ico {
-        margin-top: 0.5rem;
-        display: flex;
-        justify-content: space-between;
+    &-background {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      &-container-left-title {
+        flex-direction: column;
+        align-items: baseline;
+        margin-bottom: 0.5rem;
+        img {
+          margin-left: 0.25rem;
+          width: 20px;
+          height: 20px;
+        }
+        &-ico {
+          margin-top: 0.5rem;
+          display: flex;
+          justify-content: space-between;
+        }
       }
     }
   }

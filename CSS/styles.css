@@ -1050,6 +1050,15 @@ button {
   }
 }
 @media only screen and (max-width: 500px) {
+  .nav {
+    margin: 0;
+    padding: 0;
+    height: 0;
+  }
+  .modal-background {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
   .modal-background-container-left-title {
     flex-direction: column;
     align-items: baseline;
@@ -1057,6 +1066,8 @@ button {
   }
   .modal-background-container-left-title img {
     margin-left: 0.25rem;
+    width: 20px;
+    height: 20px;
   }
   .modal-background-container-left-title-ico {
     margin-top: 0.5rem;
