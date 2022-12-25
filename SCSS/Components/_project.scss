@@ -234,6 +234,7 @@ button {
         }
         img {
           width: 16px;
+          height: 16px;
           padding: 0.5rem;
           margin-right: 0.75rem;
           border-radius: 0.5rem;
@@ -252,6 +253,7 @@ button {
         background: $dark-blue;
         img {
           width: 16px;
+          height: 16px;
           padding: 0.8rem;
         }
         &:hover {
@@ -750,7 +752,8 @@ button {
       border: none;
       img {
         width: 1rem;
-        margin-left: 0.5rem;
+        height: 0.9rem;
+        margin-left: 0.35rem;
       }
       &:hover {
         box-shadow: $blue-shadow;
