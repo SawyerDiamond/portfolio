@@ -1050,11 +1050,6 @@ button {
   }
 }
 @media only screen and (max-width: 500px) {
-  .nav {
-    margin: 0;
-    padding: 0;
-    height: 0;
-  }
   .modal-background {
     margin-top: 3rem;
     margin-bottom: 3rem;
