@@ -505,10 +505,9 @@ button {
     place-content: center;
     margin-top: 5rem;
     grid-template-columns: repeat(3, 33%);
-    grid-template-rows: repeat(3, 33%);
+    grid-template-rows: repeat(2, 50%);
     gap: 2vw;
     grid-template-areas:
-      ". . ."
       ". . ."
       ". . .";
 

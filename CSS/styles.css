@@ -501,9 +501,9 @@ button {
   place-content: center;
   margin-top: 5rem;
   grid-template-columns: repeat(3, 33%);
-  grid-template-rows: repeat(3, 33%);
+  grid-template-rows: repeat(2, 50%);
   gap: 2vw;
-  grid-template-areas: ". . ." ". . ." ". . .";
+  grid-template-areas: ". . ." ". . .";
   z-index: 1;
 }
 
@@ -774,10 +774,10 @@ button {
   }
   .projects-list {
     grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(4, 25%);
+    grid-template-rows: repeat(3, 33%);
     margin-top: 10rem;
     gap: 4vw;
-    grid-template-areas: ". ." ". ." ". ." ". .";
+    grid-template-areas: ". ." ". ." ". .";
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -1036,7 +1036,7 @@ button {
   }
   .projects-list {
     grid-template-columns: repeat(1, 100%);
-    grid-template-rows: repeat(8, 12.5%);
+    grid-template-rows: repeat(6, 16.6%);
     margin-top: 10rem;
     gap: 4vw;
     grid-template-areas: "." "." "." "." "." "." "." ".";
