@@ -747,6 +747,14 @@ button {
   box-shadow: 0px 0px 15px rgba(16, 95, 214, 0.3764705882);
 }
 
+footer {
+  margin-top: 8rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  background: linear-gradient(90deg, #f7991d -25%, #fcc00a 110%);
+  padding: 0.5rem;
+}
+
 @media only screen and (max-width: 1600px) {
   .hero-container-text {
     line-height: 0.9;
@@ -894,6 +902,7 @@ button {
   }
   .modal-background-container {
     flex-direction: column-reverse;
+    margin-bottom: 1rem;
   }
   .modal-background-container-left p {
     width: 80vw;
@@ -1060,7 +1069,7 @@ button {
 }
 @media only screen and (max-width: 500px) {
   .modal-background {
-    margin-top: 3rem;
+    margin-top: 2rem;
     margin-bottom: 3rem;
   }
   .modal-background-container-left-title {

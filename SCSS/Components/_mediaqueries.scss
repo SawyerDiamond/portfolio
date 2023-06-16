@@ -15,6 +15,7 @@
     }
   }
 }
+
 @media only screen and (max-width: 1400px) {
   .projects {
     margin-top: 14rem;
@@ -189,6 +190,7 @@
     &-background {
       &-container {
         flex-direction: column-reverse;
+        margin-bottom: 1rem;
         &-left {
           p {
             width: 80vw;
@@ -402,7 +404,7 @@
 @media only screen and (max-width: 500px) {
   .modal {
     &-background {
-      margin-top: 3rem;
+      margin-top: 2rem;
       margin-bottom: 3rem;
       &-container-left-title {
         flex-direction: column;

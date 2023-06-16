@@ -766,3 +766,11 @@ button {
     }
   }
 }
+
+footer {
+  margin-top: 8rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  background: linear-gradient(90deg, $dark-gold -25%, $light-gold 110%);
+  padding: 0.5rem;
+}
