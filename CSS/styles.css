@@ -185,7 +185,6 @@ button {
 
 /*--<NAV BAR>--*/
 .nav {
-  position: fixed;
   width: 94%;
   height: 4rem;
   margin-top: 1.6rem;
