@@ -165,6 +165,9 @@ button {
   top: 0;
   width: 100%;
 }
+.hidden {
+  display: none;
+}
 .responsive_phone {
   display: none;
   padding: 0;
@@ -177,6 +180,7 @@ button {
 /*--<NAV BAR>--*/
 
 .nav {
+  position: fixed;
   width: 94%;
   height: 4rem;
   margin-top: 1.6rem;
@@ -337,7 +341,6 @@ button {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
-        text-fill-color: transparent;
         font-weight: 900;
         font-size: 5vw;
       }
@@ -378,10 +381,36 @@ button {
           }
         }
       }
+      &-petal {
+        z-index: 1;
+        position: absolute;
+        width: 1rem;
+      }
+    }
+  }
+  &-petal {
+    z-index: 1;
+    width: 5rem;
+    &-blue {
+      rotate: -90deg;
+      transform: scaleY(-1);
+    }
+    &-orange {
+      padding-right: 8vw;
+    }
+    &-white {
+      position: relative;
+      padding-left: 5vw;
+      padding-top: 56rem;
+      rotate: -45deg;
     }
   }
 }
 
+.petal {
+  z-index: 1;
+  position: absolute;
+}
 .waves {
   width: 100%;
   height: auto;
@@ -395,9 +424,6 @@ button {
 }
 
 /*--<SKILLS SECTION>--*/
-.hidden {
-  display: none;
-}
 
 .skills {
   width: 100%;
@@ -463,8 +489,9 @@ button {
   }
   &-item {
     filter: $navy-shadow;
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     h2 {
       position: absolute;
       z-index: 2;
