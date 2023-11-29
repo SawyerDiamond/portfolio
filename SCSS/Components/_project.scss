@@ -282,8 +282,27 @@ button {
     transform: translateY(0%);
   }
 }
+@keyframes slideOutAnimation {
+  0% {
+    transform: translateY(0%);
+  }
+  33% {
+    transform: translateY(100%);
+  }
+  66% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
 .slide-in {
   animation: slideAnimation 1250ms;
+}
+.slide-petals {
+  animation: slideAnimation 1250ms, slideOutAnimation 16250ms infinite;
+  animation-delay: 0ms, 1750ms;
 }
 
 .hero {
@@ -355,6 +374,7 @@ button {
       flex-direction: row;
       justify-content: end;
       align-items: center;
+      z-index: 1;
       &-social {
         display: flex;
         flex-direction: column;
@@ -389,38 +409,42 @@ button {
     }
   }
   &-petal {
-    z-index: 1;
-    width: 5rem;
+    z-index: 0;
     &-blue {
-      rotate: -90deg;
-      transform: scaleY(-1);
+      position: absolute;
+      width: 10rem;
+      top: 12rem;
+      right: 25rem;
     }
     &-orange {
+      position: absolute;
+      width: 5rem;
+      top: 8rem;
+      right: -5rem;
       padding-right: 8vw;
     }
     &-white {
-      position: relative;
-      padding-left: 5vw;
-      padding-top: 56rem;
+      position: absolute;
+      width: 5rem;
+      top: 35rem;
+      right: 18rem;
       rotate: -45deg;
     }
   }
 }
 
-.petal {
-  z-index: 1;
-  position: absolute;
-}
 .waves {
   width: 100%;
   height: auto;
-  z-index: -1;
+  z-index: -2;
 }
 .wavesm {
   display: none;
+  z-index: -2;
 }
 .wavesapp {
   display: none;
+  z-index: -2;
 }
 
 /*--<SKILLS SECTION>--*/
