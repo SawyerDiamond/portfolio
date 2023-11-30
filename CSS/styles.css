@@ -166,7 +166,6 @@ button {
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%;
 }
 
 .hidden {
@@ -194,6 +193,7 @@ button {
   z-index: 2;
   background-color: #0f234d;
   filter: drop-shadow(0px 0px 10px rgba(11, 22, 44, 0.0549019608));
+  overflow: hidden;
 }
 .nav-container {
   display: flex;
@@ -310,6 +310,7 @@ button {
   display: block;
   position: relative;
   white-space: nowrap;
+  overflow: hidden;
 }
 .hero-logo {
   max-width: 28%;

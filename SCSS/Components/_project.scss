@@ -153,6 +153,7 @@ button {
   -moz-osx-font-smoothing: inherit;
   -webkit-appearance: none;
 }
+
 .top-set {
   position: absolute;
   top: 0px;
@@ -163,7 +164,6 @@ button {
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%;
 }
 .hidden {
   display: none;
@@ -189,6 +189,7 @@ button {
   z-index: 2;
   background-color: $navy-secondary;
   filter: $navy-shadow;
+  overflow: hidden;
   &-container {
     display: flex;
     justify-content: space-between;
@@ -308,6 +309,7 @@ button {
   display: block;
   position: relative;
   white-space: nowrap;
+  overflow: hidden;
   &-logo {
     max-width: 28%;
     height: auto;
